@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6B09DF2C7F70B40077A0F9 /* CustomImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B09DE2C7F70B40077A0F9 /* CustomImages.swift */; };
+		DD6B09E42C7F78D80077A0F9 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B09E32C7F78D80077A0F9 /* CustomColor.swift */; };
 		DD8963DD2C7F510200428C12 /* NoulTestamentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8963DC2C7F510200428C12 /* NoulTestamentApp.swift */; };
 		DD8963DF2C7F510200428C12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8963DE2C7F510200428C12 /* ContentView.swift */; };
 		DD8963E12C7F510300428C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8963E02C7F510300428C12 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD6B09DE2C7F70B40077A0F9 /* CustomImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImages.swift; sourceTree = "<group>"; };
+		DD6B09E32C7F78D80077A0F9 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		DD8963D92C7F510200428C12 /* NoulTestament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoulTestament.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8963DC2C7F510200428C12 /* NoulTestamentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoulTestamentApp.swift; sourceTree = "<group>"; };
 		DD8963DE2C7F510200428C12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD6B09D92C7F6E1A0077A0F9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD8963DC2C7F510200428C12 /* NoulTestamentApp.swift */,
+				DD8963DE2C7F510200428C12 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DD6B09DA2C7F6E410077A0F9 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DD8963E52C7F510300428C12 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DD6B09DB2C7F6E4E0077A0F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD6B09E22C7F78C30077A0F9 /* Colors */,
+				DD6B09DD2C7F70820077A0F9 /* Images */,
+				DD8963E02C7F510300428C12 /* Assets.xcassets */,
+				DD8963E22C7F510300428C12 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD6B09DD2C7F70820077A0F9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DD6B09DE2C7F70B40077A0F9 /* CustomImages.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DD6B09E22C7F78C30077A0F9 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				DD6B09E32C7F78D80077A0F9 /* CustomColor.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		DD8963D02C7F510200428C12 = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +100,9 @@
 		DD8963DB2C7F510200428C12 /* NoulTestament */ = {
 			isa = PBXGroup;
 			children = (
-				DD8963DC2C7F510200428C12 /* NoulTestamentApp.swift */,
-				DD8963DE2C7F510200428C12 /* ContentView.swift */,
-				DD8963E02C7F510300428C12 /* Assets.xcassets */,
-				DD8963E52C7F510300428C12 /* Info.plist */,
-				DD8963E22C7F510300428C12 /* Preview Content */,
+				DD6B09D92C7F6E1A0077A0F9 /* App */,
+				DD6B09DB2C7F6E4E0077A0F9 /* Resources */,
+				DD6B09DA2C7F6E410077A0F9 /* Configuration */,
 			);
 			path = NoulTestament;
 			sourceTree = "<group>";
@@ -139,6 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8963DF2C7F510200428C12 /* ContentView.swift in Sources */,
+				DD6B09DF2C7F70B40077A0F9 /* CustomImages.swift in Sources */,
+				DD6B09E42C7F78D80077A0F9 /* CustomColor.swift in Sources */,
 				DD8963DD2C7F510200428C12 /* NoulTestamentApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,9 +316,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NoulTestament/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NoulTestament/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NoulTestament/Info.plist;
+				INFOPLIST_FILE = NoulTestament/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,9 +337,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NoulTestament/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NoulTestament/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NoulTestament/Info.plist;
+				INFOPLIST_FILE = NoulTestament/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
