@@ -31,31 +31,31 @@ struct BookSelectView: View {
     var body: some View {
         let items = ["first", "Faptele Apostolilor 34", "third"]
         NavigationView {
-            ZStack {
-                // Background Image
-                Image(.books_walpaper)
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
-                
-                Color(.above_walpapers)
-                    .edgesIgnoringSafeArea(.all)
-                
-                List {
-                    ForEach(items, id: \.self) { item in
-                        ZStack {
-                            NavigationLink(
-                                destination: ChapterSelectView(book: Book(path: "Matei"))
-                                    .navigationBarBackButtonHidden(true),
-                                label: {}).hidden()
-                            BookItemView(name: item)
-                        }
-                        .listRowBackground(Color.clear)
+            List {
+                ForEach(items, id: \.self) { item in
+                    ZStack {
+                        NavigationLink(
+                            destination: ChapterSelectView(book: Book(path: "Matei"))
+                                .navigationBarBackButtonHidden(true),
+                            label: {}).hidden()
+                        BookItemView(name: item)
                     }
-                    .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
+                    .listRowBackground(Color.clear)
                 }
-                .listStyle(PlainListStyle())
+                .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
             }
+            .listStyle(PlainListStyle())
+            .background(
+                ZStack {
+                    Image(.books_walpaper)
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
+                    
+                    Color(.above_walpapers)
+                        .edgesIgnoringSafeArea(.all)
+                })
+            
             .navigationTitle("Noul Testament")
             .navigationBarTitleDisplayMode(.inline)
         }

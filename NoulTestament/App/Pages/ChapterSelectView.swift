@@ -35,8 +35,20 @@ struct ChapterSelectView: View {
     var body: some View {
         let items = ["first", "Faptele Apostolilor 34", "third"]
         NavigationView {
-            ZStack {
-                // Background Image
+            List {
+                ForEach(items, id: \.self) { item in
+                    ZStack {
+                        NavigationLink(
+                            destination: Text(book.name),
+                            label: {}).hidden()
+                        ChapterItemView(name: item)
+                    }
+                    .listRowBackground(Color.clear)
+                }
+                .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+            }
+            .listStyle(PlainListStyle())
+            .background(ZStack {
                 Image(.chapter_walpaper)
                     .resizable()
                     .scaledToFill()
@@ -44,36 +56,30 @@ struct ChapterSelectView: View {
                 
                 Color(.above_walpapers)
                     .edgesIgnoringSafeArea(.all)
-                
-                List {
-                    ForEach(items, id: \.self) { item in
-                        ZStack {
-                            NavigationLink(
-                                destination: Text(book.name),
-                                label: {}).hidden()
-                            ChapterItemView(name: item)
-                        }
-                        .listRowBackground(Color.clear)
+            })
+            .navigationBarHidden(true)
+        }
+        .gesture(
+            DragGesture()
+                .onChanged { value in
+                    if value.translation.width > 70 {
+                        presentationMode.wrappedValue.dismiss()
                     }
-                    .listRowInsets(EdgeInsets(top: 0, leading: 48, bottom: 0, trailing: 48))
                 }
-                .listStyle(InsetListStyle())
-            }
-            .navigationTitle(book.name)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    HStack {
-                        Button(action: {
-                            presentationMode.wrappedValue.dismiss()
-                        }) {
-                            Image(.back)
-                        }
+        )
+        .navigationTitle(book.name)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                HStack {
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Image(.back)
                     }
                 }
             }
         }
-        .navigationBarHidden(true)
     }
 }
 
