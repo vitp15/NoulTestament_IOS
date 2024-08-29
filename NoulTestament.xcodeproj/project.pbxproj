@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD650E4A2C80A6B2000103E9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD650E492C80A6B2000103E9 /* Book.swift */; };
+		DD650E4E2C80B263000103E9 /* ChapterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD650E4D2C80B263000103E9 /* ChapterItemView.swift */; };
 		DD67449A2C8074130022971D /* ChapterSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6744992C8074130022971D /* ChapterSelectView.swift */; };
 		DD67449E2C8074310022971D /* AudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67449D2C8074310022971D /* AudioView.swift */; };
 		DD6744A32C8074E70022971D /* BookItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6744A22C8074E70022971D /* BookItemView.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD650E492C80A6B2000103E9 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		DD650E4D2C80B263000103E9 /* ChapterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterItemView.swift; sourceTree = "<group>"; };
 		DD6744992C8074130022971D /* ChapterSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterSelectView.swift; sourceTree = "<group>"; };
 		DD67449D2C8074310022971D /* AudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
 		DD6744A22C8074E70022971D /* BookItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItemView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD650E482C80A6A2000103E9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD650E492C80A6B2000103E9 /* Book.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		DD6744982C8073750022971D /* Pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				DD6744A22C8074E70022971D /* BookItemView.swift */,
+				DD650E4D2C80B263000103E9 /* ChapterItemView.swift */,
 			);
 			path = ListItems;
 			sourceTree = "<group>";
@@ -120,6 +133,7 @@
 		DD6B09D92C7F6E1A0077A0F9 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				DD650E482C80A6A2000103E9 /* Utils */,
 				DD6744A12C8074A40022971D /* ListItems */,
 				DD6744982C8073750022971D /* Pages */,
 				DD8963DC2C7F510200428C12 /* NoulTestamentApp.swift */,
@@ -287,7 +301,9 @@
 				DD6B09DF2C7F70B40077A0F9 /* CustomImages.swift in Sources */,
 				DD6B09E42C7F78D80077A0F9 /* CustomColor.swift in Sources */,
 				DD67449A2C8074130022971D /* ChapterSelectView.swift in Sources */,
+				DD650E4A2C80A6B2000103E9 /* Book.swift in Sources */,
 				DD8963DD2C7F510200428C12 /* NoulTestamentApp.swift in Sources */,
+				DD650E4E2C80B263000103E9 /* ChapterItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

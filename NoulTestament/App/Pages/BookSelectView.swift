@@ -45,7 +45,8 @@ struct BookSelectView: View {
                     ForEach(items, id: \.self) { item in
                         ZStack {
                             NavigationLink(
-                                destination: Text("Destination"),
+                                destination: ChapterSelectView(book: Book(path: "Matei"))
+                                    .navigationBarBackButtonHidden(true),
                                 label: {}).hidden()
                             BookItemView(name: item)
                         }

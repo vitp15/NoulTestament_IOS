@@ -8,13 +8,77 @@
 import SwiftUI
 
 struct ChapterSelectView: View {
+    let book: Book
+    @Environment(\.presentationMode) var presentationMode
+    
+    init(book: Book) {
+        self.book = book
+        // Customize the navigation bar appearance
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(.seed) ?? UIColor.green
+        let onPrimaryColor = UIColor(.onPrimary) ?? UIColor.white
+        let customFont = UIFont(.roboto_medium, size: 22) ??
+            UIFont.systemFont(ofSize: 22, weight: .medium)
+        appearance.titleTextAttributes = [
+            .font: customFont,
+            .foregroundColor: onPrimaryColor
+        ]
+        appearance.largeTitleTextAttributes = [.foregroundColor: onPrimaryColor]
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let items = ["first", "Faptele Apostolilor 34", "third"]
+        NavigationView {
+            ZStack {
+                // Background Image
+                Image(.chapter_walpaper)
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
+                
+                Color(.above_walpapers)
+                    .edgesIgnoringSafeArea(.all)
+                
+                List {
+                    ForEach(items, id: \.self) { item in
+                        ZStack {
+                            NavigationLink(
+                                destination: Text(book.name),
+                                label: {}).hidden()
+                            ChapterItemView(name: item)
+                        }
+                        .listRowBackground(Color.clear)
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 48, bottom: 0, trailing: 48))
+                }
+                .listStyle(InsetListStyle())
+            }
+            .navigationTitle(book.name)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    HStack {
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Image(.back)
+                        }
+                    }
+                }
+            }
+        }
+        .navigationBarHidden(true)
     }
 }
 
 struct ChapterSelectView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterSelectView()
+        ChapterSelectView(book: Book(path: "Matei"))
     }
 }

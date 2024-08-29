@@ -9,7 +9,7 @@ import SwiftUI
 
 enum CustomImages: String {
     case books_walpaper
-    case chapters_walpaper
+    case chapter_walpaper
     case audio_walpaper
 }
 

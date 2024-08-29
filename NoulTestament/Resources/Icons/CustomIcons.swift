@@ -10,6 +10,7 @@ import SwiftUI
 enum CustomIcons: String {
     case book
     case audio
+    case back
 }
 
 extension Image {
