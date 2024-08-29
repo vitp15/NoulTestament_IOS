@@ -11,16 +11,24 @@ struct BookItemView: View {
     let name: String
     
     var body: some View {
-        HStack {
-            Image(.book)
-            
-            Text(name)
-                .font(.roboto_medium, size: 24)
-                .foregroundColor(Color(.onSurface))
-                .background(Color.clear)
-                .frame(maxWidth: .infinity, alignment: .center)
+        VStack {
+            HStack {
+                Image(.book)
+                
+                Text(name)
+                    .font(.roboto_medium, size: 24)
+                    .foregroundColor(Color(.onSurface))
+                    .background(Color.clear)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .padding(.trailing, 24)
+                    .minimumScaleFactor(0.75)
+                    .lineLimit(1)
+            }
+            Rectangle()
+                .frame(height: 1)
+                .foregroundColor(Color(.outline))
         }
-        .frame(height: 52)
+        .frame(height: 52, alignment: .bottom)
         .background(Color.clear)
     }
 }

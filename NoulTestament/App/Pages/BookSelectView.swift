@@ -29,7 +29,7 @@ struct BookSelectView: View {
     }
     
     var body: some View {
-        let items = ["first", "second", "third"]
+        let items = ["first", "Faptele Apostolilor 34", "third"]
         NavigationView {
             ZStack {
                 // Background Image
@@ -43,13 +43,15 @@ struct BookSelectView: View {
                 
                 List {
                     ForEach(items, id: \.self) { item in
-                        NavigationLink(
-                            destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
-                            label: {
-                                BookItemView(name: item)
-                            })
-                            .listRowBackground(Color.clear)
+                        ZStack {
+                            NavigationLink(
+                                destination: Text("Destination"),
+                                label: {}).hidden()
+                            BookItemView(name: item)
+                        }
+                        .listRowBackground(Color.clear)
                     }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
                 }
                 .listStyle(PlainListStyle())
             }
