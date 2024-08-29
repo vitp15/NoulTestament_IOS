@@ -11,6 +11,8 @@ enum CustomColors: String {
     case above_walpapers
     case seed
     case onPrimary
+    case onSurface
+    case outline
 }
 
 extension Color {

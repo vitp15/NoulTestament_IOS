@@ -11,7 +11,7 @@ import SwiftUI
 struct NoulTestamentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookSelectView()
         }
     }
 }

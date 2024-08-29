@@ -7,20 +7,29 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BookSelectView: View {
     init() {
         // Customize the navigation bar appearance
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(.seed) ?? UIColor.green
         let onPrimaryColor = UIColor(.onPrimary) ?? UIColor.white
-        appearance.titleTextAttributes = [.foregroundColor: onPrimaryColor]
+        let customFont = UIFont(.roboto_medium, size: 22) ??
+            UIFont.systemFont(ofSize: 22, weight: .medium)
+        appearance.titleTextAttributes = [
+            .font: customFont,
+            .foregroundColor: onPrimaryColor
+        ]
         appearance.largeTitleTextAttributes = [.foregroundColor: onPrimaryColor]
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        UITableView.appearance().backgroundColor = .clear
+        UITableViewCell.appearance().backgroundColor = .clear
     }
     
     var body: some View {
+        let items = ["first", "second", "third"]
         NavigationView {
             ZStack {
                 // Background Image
@@ -32,12 +41,17 @@ struct ContentView: View {
                 Color(.above_walpapers)
                     .edgesIgnoringSafeArea(.all)
                 
-                VStack {
-                    Text("Hello, SwiftUI!")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                        .padding()
+                List {
+                    ForEach(items, id: \.self) { item in
+                        NavigationLink(
+                            destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                            label: {
+                                BookItemView(name: item)
+                            })
+                            .listRowBackground(Color.clear)
+                    }
                 }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("Noul Testament")
             .navigationBarTitleDisplayMode(.inline)
@@ -45,9 +59,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct BookSelectView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BookSelectView()
     }
 }
-
