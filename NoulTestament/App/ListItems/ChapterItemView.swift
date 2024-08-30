@@ -17,7 +17,8 @@ struct ChapterItemView: View {
                 Image(.audio)
                 
                 Text(name)
-                    .font(.roboto_medium, size: 24)
+                    .font(.roboto, size: 24)
+                    .fontWeight(.medium)
                     .foregroundColor(Color(.onSurface))
                     .background(Color.clear)
                     .frame(maxWidth: .infinity, alignment: .center)

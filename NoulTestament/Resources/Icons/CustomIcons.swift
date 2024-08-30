@@ -11,6 +11,13 @@ enum CustomIcons: String {
     case book
     case audio
     case back
+    case arrow_back
+    case forward_5
+    case pause
+    case play
+    case replay_5
+    case next = "skip_next"
+    case previous = "skip_previous"
 }
 
 extension Image {

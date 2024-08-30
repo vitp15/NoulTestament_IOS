@@ -17,8 +17,7 @@ struct BookSelectView: View {
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(.seed) ?? UIColor.green
         let onPrimaryColor = UIColor(.onPrimary) ?? UIColor.white
-        let customFont = UIFont(.roboto_medium, size: 22) ??
-            UIFont.systemFont(ofSize: 22, weight: .medium)
+        let customFont = UIFont.roboto(size: 22, weight: .medium)
         appearance.titleTextAttributes = [
             .font: customFont,
             .foregroundColor: onPrimaryColor

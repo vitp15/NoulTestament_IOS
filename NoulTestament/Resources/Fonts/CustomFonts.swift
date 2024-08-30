@@ -8,8 +8,7 @@
 import SwiftUI
 
 enum CustomFonts: String {
-    case roboto_regular = "Roboto-Regular"
-    case roboto_medium = "Roboto-Medium"
+    case roboto = "Roboto"
     
 }
 
@@ -26,7 +25,18 @@ extension Text {
 }
 
 extension UIFont {
-    convenience init?(_ customFonts: CustomFonts, size: CGFloat) {
-        self.init(name: customFonts.rawValue, size: size)
+    static func roboto(size: CGFloat, weight: UIFont.Weight = .regular) -> UIFont {
+        let fontName: String
+        switch weight {
+        case .medium:
+            fontName = "Roboto-Medium"
+        case .bold:
+            fontName = "Roboto-Bold"
+        case .regular:
+            fontName = "Roboto-Regular"
+        default:
+            fontName = "Roboto-Regular"
+        }
+        return UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size, weight: weight)
     }
 }

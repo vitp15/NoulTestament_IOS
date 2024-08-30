@@ -16,7 +16,8 @@ struct ChapterSelectView: View {
             ForEach(1...book.chapters, id: \.self) { chapter in
                 ZStack {
                     NavigationLink(
-                        destination: AudioView(book: book, currChapter: chapter),
+                        destination: AudioView(book: book, currChapter: chapter)
+                            .navigationBarBackButtonHidden(true),
                         label: {}).hidden()
                     ChapterItemView(name: "\(book.name) \(String(chapter))")
                 }

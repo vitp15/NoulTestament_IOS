@@ -13,6 +13,8 @@ enum CustomColors: String {
     case onPrimary
     case onSurface
     case outline
+    case tertiary
+    case tertiaryFixedDim
 }
 
 extension Color {
