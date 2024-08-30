@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct AudioView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Audio View Content")
+            .navigationBarHidden(true)
+//            .gesture(
+//                DragGesture()
+//                    .onChanged { value in
+//                        if value.translation.width > 70 {
+//                            presentationMode.wrappedValue.dismiss()
+//                        }
+//                    }
+//            )
     }
 }
 

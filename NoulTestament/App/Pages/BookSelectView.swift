@@ -55,9 +55,9 @@ struct BookSelectView: View {
                     Color(.above_walpapers)
                         .edgesIgnoringSafeArea(.all)
                 })
-            
             .navigationTitle("Noul Testament")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
