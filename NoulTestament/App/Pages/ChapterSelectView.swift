@@ -12,14 +12,13 @@ struct ChapterSelectView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        let items = ["first", "Faptele Apostolilor 34", "third"]
         List {
-            ForEach(items, id: \.self) { item in
+            ForEach(1...book.chapters, id: \.self) { chapter in
                 ZStack {
                     NavigationLink(
-                        destination: AudioView(),
+                        destination: AudioView(book: book, currChapter: chapter),
                         label: {}).hidden()
-                    ChapterItemView(name: item)
+                    ChapterItemView(name: "\(book.name) \(String(chapter))")
                 }
                 .listRowBackground(Color.clear)
             }
@@ -60,6 +59,6 @@ struct ChapterSelectView: View {
 
 struct ChapterSelectView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterSelectView(book: Book(path: "Matei"))
+        ChapterSelectView(book: Book(order: 1, name: "Matei", chapters: 28))
     }
 }

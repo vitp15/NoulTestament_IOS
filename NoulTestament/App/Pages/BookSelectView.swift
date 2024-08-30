@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct BookSelectView: View {
+    let books: [Book]
+    
     init() {
+        books = getAllBooks()
         // Customize the navigation bar appearance
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -29,16 +32,15 @@ struct BookSelectView: View {
     }
     
     var body: some View {
-        let items = ["first", "Faptele Apostolilor 34", "third"]
         NavigationView {
             List {
-                ForEach(items, id: \.self) { item in
+                ForEach(books, id: \.order) { book in
                     ZStack {
                         NavigationLink(
-                            destination: ChapterSelectView(book: Book(path: "Matei"))
+                            destination: ChapterSelectView(book: book)
                                 .navigationBarBackButtonHidden(true),
                             label: {}).hidden()
-                        BookItemView(name: item)
+                        BookItemView(name: book.name)
                     }
                     .listRowBackground(Color.clear)
                 }

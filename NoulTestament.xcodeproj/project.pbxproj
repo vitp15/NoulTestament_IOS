@@ -32,6 +32,256 @@
 		DD8963DF2C7F510200428C12 /* BookSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8963DE2C7F510200428C12 /* BookSelectView.swift */; };
 		DD8963E12C7F510300428C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8963E02C7F510300428C12 /* Assets.xcassets */; };
 		DD8963E42C7F510300428C12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8963E32C7F510300428C12 /* Preview Assets.xcassets */; };
+		DDF0C1CA2C81DF8D008A669A /* 01_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0B72C81DF62008A669A /* 01_1-Corinteni.mp3 */; };
+		DDF0C1CB2C81DF8D008A669A /* 09_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0B82C81DF62008A669A /* 09_1-Corinteni.mp3 */; };
+		DDF0C1CC2C81DF8D008A669A /* 10_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0B92C81DF62008A669A /* 10_1-Corinteni.mp3 */; };
+		DDF0C1CD2C81DF8D008A669A /* 06_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0BA2C81DF62008A669A /* 06_1-Corinteni.mp3 */; };
+		DDF0C1CE2C81DF8D008A669A /* 08_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0BB2C81DF62008A669A /* 08_1-Corinteni.mp3 */; };
+		DDF0C1CF2C81DF8D008A669A /* 11_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0BC2C81DF62008A669A /* 11_1-Corinteni.mp3 */; };
+		DDF0C1D02C81DF8D008A669A /* 07_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0BD2C81DF62008A669A /* 07_1-Corinteni.mp3 */; };
+		DDF0C1D12C81DF8D008A669A /* 16_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0BE2C81DF62008A669A /* 16_1-Corinteni.mp3 */; };
+		DDF0C1D22C81DF8D008A669A /* 13_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0BF2C81DF62008A669A /* 13_1-Corinteni.mp3 */; };
+		DDF0C1D32C81DF8D008A669A /* 05_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C02C81DF62008A669A /* 05_1-Corinteni.mp3 */; };
+		DDF0C1D42C81DF8D008A669A /* 02_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C12C81DF62008A669A /* 02_1-Corinteni.mp3 */; };
+		DDF0C1D52C81DF8D008A669A /* 14_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C22C81DF62008A669A /* 14_1-Corinteni.mp3 */; };
+		DDF0C1D62C81DF8D008A669A /* 03_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C32C81DF62008A669A /* 03_1-Corinteni.mp3 */; };
+		DDF0C1D72C81DF8D008A669A /* 15_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C42C81DF62008A669A /* 15_1-Corinteni.mp3 */; };
+		DDF0C1D82C81DF8D008A669A /* 12_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C52C81DF62008A669A /* 12_1-Corinteni.mp3 */; };
+		DDF0C1D92C81DF8D008A669A /* 04_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C62C81DF62008A669A /* 04_1-Corinteni.mp3 */; };
+		DDF0C1DA2C81DF8D008A669A /* 04_Iacov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C82C81DF62008A669A /* 04_Iacov.mp3 */; };
+		DDF0C1DB2C81DF8D008A669A /* 02_Iacov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0C92C81DF62008A669A /* 02_Iacov.mp3 */; };
+		DDF0C1DC2C81DF8D008A669A /* 05_Iacov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0CA2C81DF62008A669A /* 05_Iacov.mp3 */; };
+		DDF0C1DD2C81DF8D008A669A /* 03_Iacov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0CB2C81DF62008A669A /* 03_Iacov.mp3 */; };
+		DDF0C1DE2C81DF8D008A669A /* 01_Iacov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0CC2C81DF62008A669A /* 01_Iacov.mp3 */; };
+		DDF0C1DF2C81DF8D008A669A /* 09_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0CE2C81DF65008A669A /* 09_Marcu.mp3 */; };
+		DDF0C1E02C81DF8D008A669A /* 04_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0CF2C81DF65008A669A /* 04_Marcu.mp3 */; };
+		DDF0C1E12C81DF8D008A669A /* 10_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D02C81DF65008A669A /* 10_Marcu.mp3 */; };
+		DDF0C1E22C81DF8D008A669A /* 02_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D12C81DF65008A669A /* 02_Marcu.mp3 */; };
+		DDF0C1E32C81DF8D008A669A /* 16_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D22C81DF65008A669A /* 16_Marcu.mp3 */; };
+		DDF0C1E42C81DF8D008A669A /* 08_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D32C81DF65008A669A /* 08_Marcu.mp3 */; };
+		DDF0C1E52C81DF8D008A669A /* 11_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D42C81DF65008A669A /* 11_Marcu.mp3 */; };
+		DDF0C1E62C81DF8D008A669A /* 05_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D52C81DF65008A669A /* 05_Marcu.mp3 */; };
+		DDF0C1E72C81DF8D008A669A /* 03_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D62C81DF65008A669A /* 03_Marcu.mp3 */; };
+		DDF0C1E82C81DF8D008A669A /* 06_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D72C81DF65008A669A /* 06_Marcu.mp3 */; };
+		DDF0C1E92C81DF8D008A669A /* 12_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D82C81DF65008A669A /* 12_Marcu.mp3 */; };
+		DDF0C1EA2C81DF8D008A669A /* 14_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0D92C81DF65008A669A /* 14_Marcu.mp3 */; };
+		DDF0C1EB2C81DF8D008A669A /* 13_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0DA2C81DF65008A669A /* 13_Marcu.mp3 */; };
+		DDF0C1EC2C81DF8D008A669A /* 07_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0DB2C81DF65008A669A /* 07_Marcu.mp3 */; };
+		DDF0C1ED2C81DF8D008A669A /* 15_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0DC2C81DF65008A669A /* 15_Marcu.mp3 */; };
+		DDF0C1EE2C81DF8D008A669A /* 01_Marcu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0DD2C81DF65008A669A /* 01_Marcu.mp3 */; };
+		DDF0C1EF2C81DF8D008A669A /* 03_2-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0DF2C81DF66008A669A /* 03_2-Timotei.mp3 */; };
+		DDF0C1F02C81DF8D008A669A /* 04_2-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E02C81DF66008A669A /* 04_2-Timotei.mp3 */; };
+		DDF0C1F12C81DF8D008A669A /* 01_2-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E12C81DF66008A669A /* 01_2-Timotei.mp3 */; };
+		DDF0C1F22C81DF8D008A669A /* 02_2-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E22C81DF66008A669A /* 02_2-Timotei.mp3 */; };
+		DDF0C1F32C81DF8D008A669A /* 06_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E42C81DF67008A669A /* 06_2-Corinteni.mp3 */; };
+		DDF0C1F42C81DF8D008A669A /* 09_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E52C81DF67008A669A /* 09_2-Corinteni.mp3 */; };
+		DDF0C1F52C81DF8D008A669A /* 10_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E62C81DF67008A669A /* 10_2-Corinteni.mp3 */; };
+		DDF0C1F62C81DF8D008A669A /* 01_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E72C81DF67008A669A /* 01_2-Corinteni.mp3 */; };
+		DDF0C1F72C81DF8D008A669A /* 07_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E82C81DF67008A669A /* 07_2-Corinteni.mp3 */; };
+		DDF0C1F82C81DF8D008A669A /* 08_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0E92C81DF67008A669A /* 08_2-Corinteni.mp3 */; };
+		DDF0C1F92C81DF8D008A669A /* 11_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0EA2C81DF67008A669A /* 11_2-Corinteni.mp3 */; };
+		DDF0C1FA2C81DF8D008A669A /* 02_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0EB2C81DF67008A669A /* 02_2-Corinteni.mp3 */; };
+		DDF0C1FB2C81DF8D008A669A /* 05_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0EC2C81DF67008A669A /* 05_2-Corinteni.mp3 */; };
+		DDF0C1FC2C81DF8D008A669A /* 13_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0ED2C81DF67008A669A /* 13_2-Corinteni.mp3 */; };
+		DDF0C1FD2C81DF8D008A669A /* 04_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0EE2C81DF67008A669A /* 04_2-Corinteni.mp3 */; };
+		DDF0C1FE2C81DF8D008A669A /* 12_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0EF2C81DF67008A669A /* 12_2-Corinteni.mp3 */; };
+		DDF0C1FF2C81DF8D008A669A /* 03_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F02C81DF67008A669A /* 03_2-Corinteni.mp3 */; };
+		DDF0C2002C81DF8D008A669A /* 21_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F22C81DF6E008A669A /* 21_Matei.mp3 */; };
+		DDF0C2012C81DF8D008A669A /* 03_Matei .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F32C81DF6E008A669A /* 03_Matei .mp3 */; };
+		DDF0C2022C81DF8D008A669A /* 06_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F42C81DF6E008A669A /* 06_Matei.mp3 */; };
+		DDF0C2032C81DF8D008A669A /* 04_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F52C81DF6E008A669A /* 04_Matei.mp3 */; };
+		DDF0C2042C81DF8D008A669A /* 23_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F62C81DF6E008A669A /* 23_Matei.mp3 */; };
+		DDF0C2052C81DF8D008A669A /* 02_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F72C81DF6E008A669A /* 02_Matei.mp3 */; };
+		DDF0C2062C81DF8D008A669A /* 17_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F82C81DF6E008A669A /* 17_Matei.mp3 */; };
+		DDF0C2072C81DF8D008A669A /* 28_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F92C81DF6E008A669A /* 28_Matei.mp3 */; };
+		DDF0C2082C81DF8D008A669A /* 01_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0FA2C81DF6E008A669A /* 01_Matei.mp3 */; };
+		DDF0C2092C81DF8D008A669A /* 10_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0FB2C81DF6E008A669A /* 10_Matei.mp3 */; };
+		DDF0C20A2C81DF8D008A669A /* 27_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0FC2C81DF6E008A669A /* 27_Matei.mp3 */; };
+		DDF0C20B2C81DF8D008A669A /* 13_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0FD2C81DF6E008A669A /* 13_Matei.mp3 */; };
+		DDF0C20C2C81DF8D008A669A /* 08_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0FE2C81DF6E008A669A /* 08_Matei.mp3 */; };
+		DDF0C20D2C81DF8D008A669A /* 25_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0FF2C81DF6E008A669A /* 25_Matei.mp3 */; };
+		DDF0C20E2C81DF8D008A669A /* 19_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1002C81DF6E008A669A /* 19_Matei.mp3 */; };
+		DDF0C20F2C81DF8D008A669A /* 22_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1012C81DF6E008A669A /* 22_Matei.mp3 */; };
+		DDF0C2102C81DF8D008A669A /* 15_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1022C81DF6E008A669A /* 15_Matei.mp3 */; };
+		DDF0C2112C81DF8D008A669A /* 03_2-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1042C81DF6E008A669A /* 03_2-Petru.mp3 */; };
+		DDF0C2122C81DF8D008A669A /* 01_2-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1052C81DF6E008A669A /* 01_2-Petru.mp3 */; };
+		DDF0C2132C81DF8D008A669A /* 02_2-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1062C81DF6F008A669A /* 02_2-Petru.mp3 */; };
+		DDF0C2142C81DF8D008A669A /* 04_1-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1082C81DF6F008A669A /* 04_1-Timotei.mp3 */; };
+		DDF0C2152C81DF8D008A669A /* 03_1-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1092C81DF6F008A669A /* 03_1-Timotei.mp3 */; };
+		DDF0C2162C81DF8D008A669A /* 06_1-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C10A2C81DF6F008A669A /* 06_1-Timotei.mp3 */; };
+		DDF0C2172C81DF8D008A669A /* 02_1-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C10B2C81DF6F008A669A /* 02_1-Timotei.mp3 */; };
+		DDF0C2182C81DF8D008A669A /* 05_1-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C10C2C81DF6F008A669A /* 05_1-Timotei.mp3 */; };
+		DDF0C2192C81DF8D008A669A /* 01_1-Timotei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C10D2C81DF6F008A669A /* 01_1-Timotei.mp3 */; };
+		DDF0C21A2C81DF8D008A669A /* 02_1-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C10F2C81DF70008A669A /* 02_1-Petru.mp3 */; };
+		DDF0C21B2C81DF8D008A669A /* 04_1-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1102C81DF70008A669A /* 04_1-Petru.mp3 */; };
+		DDF0C21C2C81DF8D008A669A /* 01_1-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1112C81DF70008A669A /* 01_1-Petru.mp3 */; };
+		DDF0C21D2C81DF8D008A669A /* 03_1-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1122C81DF70008A669A /* 03_1-Petru.mp3 */; };
+		DDF0C21E2C81DF8D008A669A /* 05_1-Petru.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1132C81DF70008A669A /* 05_1-Petru.mp3 */; };
+		DDF0C21F2C81DF8D008A669A /* 05_1-Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1152C81DF70008A669A /* 05_1-Ioan.mp3 */; };
+		DDF0C2202C81DF8D008A669A /* 02_1-Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1162C81DF70008A669A /* 02_1-Ioan.mp3 */; };
+		DDF0C2212C81DF8D008A669A /* 01_1-Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1172C81DF70008A669A /* 01_1-Ioan.mp3 */; };
+		DDF0C2222C81DF8D008A669A /* 04_1-Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1182C81DF70008A669A /* 04_1-Ioan.mp3 */; };
+		DDF0C2232C81DF8D008A669A /* 03_1-Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1192C81DF70008A669A /* 03_1-Ioan.mp3 */; };
+		DDF0C2242C81DF8D008A669A /* 03_Coloseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C11B2C81DF71008A669A /* 03_Coloseni.mp3 */; };
+		DDF0C2252C81DF8D008A669A /* 04_Coloseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C11C2C81DF71008A669A /* 04_Coloseni.mp3 */; };
+		DDF0C2262C81DF8D008A669A /* 02_Coloseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C11D2C81DF71008A669A /* 02_Coloseni.mp3 */; };
+		DDF0C2272C81DF8D008A669A /* 01_Coloseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C11E2C81DF71008A669A /* 01_Coloseni.mp3 */; };
+		DDF0C2282C81DF8D008A669A /* 07_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1202C81DF73008A669A /* 07_Romani.mp3 */; };
+		DDF0C2292C81DF8D008A669A /* 16_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1212C81DF73008A669A /* 16_Romani.mp3 */; };
+		DDF0C22A2C81DF8D008A669A /* 13_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1222C81DF73008A669A /* 13_Romani.mp3 */; };
+		DDF0C22B2C81DF8D008A669A /* 02_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1232C81DF73008A669A /* 02_Romani.mp3 */; };
+		DDF0C22C2C81DF8D008A669A /* 05_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1242C81DF73008A669A /* 05_Romani.mp3 */; };
+		DDF0C22D2C81DF8D008A669A /* 08_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1252C81DF73008A669A /* 08_Romani.mp3 */; };
+		DDF0C22E2C81DF8D008A669A /* 14_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1262C81DF73008A669A /* 14_Romani.mp3 */; };
+		DDF0C22F2C81DF8D008A669A /* 11_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1272C81DF73008A669A /* 11_Romani.mp3 */; };
+		DDF0C2302C81DF8D008A669A /* 12_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1282C81DF73008A669A /* 12_Romani.mp3 */; };
+		DDF0C2312C81DF8D008A669A /* 03_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1292C81DF73008A669A /* 03_Romani.mp3 */; };
+		DDF0C2322C81DF8D008A669A /* 06_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C12A2C81DF73008A669A /* 06_Romani.mp3 */; };
+		DDF0C2332C81DF8D008A669A /* 10_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C12B2C81DF73008A669A /* 10_Romani.mp3 */; };
+		DDF0C2342C81DF8D008A669A /* 01_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C12C2C81DF73008A669A /* 01_Romani.mp3 */; };
+		DDF0C2352C81DF8D008A669A /* 04_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C12D2C81DF73008A669A /* 04_Romani.mp3 */; };
+		DDF0C2362C81DF8D008A669A /* 09_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C12E2C81DF73008A669A /* 09_Romani.mp3 */; };
+		DDF0C2372C81DF8D008A669A /* 15_Romani.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C12F2C81DF73008A669A /* 15_Romani.mp3 */; };
+		DDF0C2382C81DF8D008A669A /* 03_2-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1312C81DF74008A669A /* 03_2-Tesaloniceni.mp3 */; };
+		DDF0C2392C81DF8D008A669A /* 02_2-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1322C81DF74008A669A /* 02_2-Tesaloniceni.mp3 */; };
+		DDF0C23A2C81DF8D008A669A /* 01_2-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1332C81DF74008A669A /* 01_2-Tesaloniceni.mp3 */; };
+		DDF0C23B2C81DF8D008A669A /* 03_Tit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1352C81DF74008A669A /* 03_Tit.mp3 */; };
+		DDF0C23C2C81DF8D008A669A /* 02_Tit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1362C81DF74008A669A /* 02_Tit.mp3 */; };
+		DDF0C23D2C81DF8D008A669A /* 01_Tit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1372C81DF74008A669A /* 01_Tit.mp3 */; };
+		DDF0C23E2C81DF8D008A669A /* 01_3-Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1392C81DF74008A669A /* 01_3-Ioan.mp3 */; };
+		DDF0C23F2C81DF8E008A669A /* 01_2-Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C13B2C81DF74008A669A /* 01_2-Ioan.mp3 */; };
+		DDF0C2402C81DF8E008A669A /* 03_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C13D2C81DF79008A669A /* 03_Luca.mp3 */; };
+		DDF0C2412C81DF8E008A669A /* 02_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C13E2C81DF79008A669A /* 02_Luca.mp3 */; };
+		DDF0C2422C81DF8E008A669A /* 09_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C13F2C81DF79008A669A /* 09_Luca.mp3 */; };
+		DDF0C2432C81DF8E008A669A /* 08_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1402C81DF79008A669A /* 08_Luca.mp3 */; };
+		DDF0C2442C81DF8E008A669A /* 14_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1412C81DF79008A669A /* 14_Luca.mp3 */; };
+		DDF0C2452C81DF8E008A669A /* 15_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1422C81DF79008A669A /* 15_Luca.mp3 */; };
+		DDF0C2462C81DF8E008A669A /* 20_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1432C81DF79008A669A /* 20_Luca.mp3 */; };
+		DDF0C2472C81DF8E008A669A /* 21_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1442C81DF79008A669A /* 21_Luca.mp3 */; };
+		DDF0C2482C81DF8E008A669A /* 13_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1452C81DF79008A669A /* 13_Luca.mp3 */; };
+		DDF0C2492C81DF8E008A669A /* 12_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1462C81DF79008A669A /* 12_Luca.mp3 */; };
+		DDF0C24A2C81DF8E008A669A /* 19_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1472C81DF79008A669A /* 19_Luca.mp3 */; };
+		DDF0C24B2C81DF8E008A669A /* 18_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1482C81DF79008A669A /* 18_Luca.mp3 */; };
+		DDF0C24C2C81DF8E008A669A /* 04_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1492C81DF79008A669A /* 04_Luca.mp3 */; };
+		DDF0C24D2C81DF8E008A669A /* 05_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C14A2C81DF79008A669A /* 05_Luca.mp3 */; };
+		DDF0C24E2C81DF8E008A669A /* 23_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C14B2C81DF79008A669A /* 23_Luca.mp3 */; };
+		DDF0C24F2C81DF8E008A669A /* 22_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C14C2C81DF79008A669A /* 22_Luca.mp3 */; };
+		DDF0C2502C81DF8E008A669A /* 17_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C14D2C81DF79008A669A /* 17_Luca.mp3 */; };
+		DDF0C2512C81DF8E008A669A /* 16_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C14E2C81DF79008A669A /* 16_Luca.mp3 */; };
+		DDF0C2522C81DF8E008A669A /* 01_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C14F2C81DF79008A669A /* 01_Luca.mp3 */; };
+		DDF0C2532C81DF8E008A669A /* 07_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1502C81DF79008A669A /* 07_Luca.mp3 */; };
+		DDF0C2542C81DF8E008A669A /* 06_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1512C81DF79008A669A /* 06_Luca.mp3 */; };
+		DDF0C2552C81DF8E008A669A /* Contract avocat.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1522C81DF79008A669A /* Contract avocat.pdf */; };
+		DDF0C2562C81DF8E008A669A /* 24_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1532C81DF79008A669A /* 24_Luca.mp3 */; };
+		DDF0C2572C81DF8E008A669A /* 10_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1542C81DF79008A669A /* 10_Luca.mp3 */; };
+		DDF0C2582C81DF8E008A669A /* 11_Luca.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1552C81DF79008A669A /* 11_Luca.mp3 */; };
+		DDF0C2592C81DF8E008A669A /* 04_Efeseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1572C81DF7A008A669A /* 04_Efeseni.mp3 */; };
+		DDF0C25A2C81DF8E008A669A /* 01_Efeseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1582C81DF7A008A669A /* 01_Efeseni.mp3 */; };
+		DDF0C25B2C81DF8E008A669A /* 02_Efeseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1592C81DF7A008A669A /* 02_Efeseni.mp3 */; };
+		DDF0C25C2C81DF8E008A669A /* 05_Efeseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C15A2C81DF7A008A669A /* 05_Efeseni.mp3 */; };
+		DDF0C25D2C81DF8E008A669A /* 06_Efeseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C15B2C81DF7A008A669A /* 06_Efeseni.mp3 */; };
+		DDF0C25E2C81DF8E008A669A /* 03_Efeseni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C15C2C81DF7A008A669A /* 03_Efeseni.mp3 */; };
+		DDF0C25F2C81DF8E008A669A /* 16_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C15E2C81DF7E008A669A /* 16_Ioan.mp3 */; };
+		DDF0C2602C81DF8E008A669A /* 17_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C15F2C81DF7E008A669A /* 17_Ioan.mp3 */; };
+		DDF0C2612C81DF8E008A669A /* 01_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1602C81DF7E008A669A /* 01_Ioan.mp3 */; };
+		DDF0C2622C81DF8E008A669A /* 06_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1612C81DF7E008A669A /* 06_Ioan.mp3 */; };
+		DDF0C2632C81DF8E008A669A /* 07_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1622C81DF7E008A669A /* 07_Ioan.mp3 */; };
+		DDF0C2642C81DF8E008A669A /* 11_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1632C81DF7E008A669A /* 11_Ioan.mp3 */; };
+		DDF0C2652C81DF8E008A669A /* 10_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1642C81DF7E008A669A /* 10_Ioan.mp3 */; };
+		DDF0C2662C81DF8E008A669A /* 02_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1652C81DF7E008A669A /* 02_Ioan.mp3 */; };
+		DDF0C2672C81DF8E008A669A /* 03_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1662C81DF7E008A669A /* 03_Ioan.mp3 */; };
+		DDF0C2682C81DF8E008A669A /* 08_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1672C81DF7E008A669A /* 08_Ioan.mp3 */; };
+		DDF0C2692C81DF8E008A669A /* 09_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1682C81DF7E008A669A /* 09_Ioan.mp3 */; };
+		DDF0C26A2C81DF8E008A669A /* 15_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1692C81DF7E008A669A /* 15_Ioan.mp3 */; };
+		DDF0C26B2C81DF8E008A669A /* 14_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C16A2C81DF7E008A669A /* 14_Ioan.mp3 */; };
+		DDF0C26C2C81DF8E008A669A /* 21_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C16B2C81DF7E008A669A /* 21_Ioan.mp3 */; };
+		DDF0C26D2C81DF8E008A669A /* 20_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C16C2C81DF7E008A669A /* 20_Ioan.mp3 */; };
+		DDF0C26E2C81DF8E008A669A /* 12_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C16D2C81DF7E008A669A /* 12_Ioan.mp3 */; };
+		DDF0C26F2C81DF8E008A669A /* 13_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C16E2C81DF7E008A669A /* 13_Ioan.mp3 */; };
+		DDF0C2702C81DF8E008A669A /* 18_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C16F2C81DF7E008A669A /* 18_Ioan.mp3 */; };
+		DDF0C2712C81DF8E008A669A /* 19_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1702C81DF7E008A669A /* 19_Ioan.mp3 */; };
+		DDF0C2722C81DF8E008A669A /* 05_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1712C81DF7E008A669A /* 05_Ioan.mp3 */; };
+		DDF0C2732C81DF8E008A669A /* 04_Ioan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1722C81DF7E008A669A /* 04_Ioan.mp3 */; };
+		DDF0C2742C81DF8E008A669A /* 01_Filimon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1742C81DF7E008A669A /* 01_Filimon.mp3 */; };
+		DDF0C2752C81DF8E008A669A /* 03_Filipeni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1762C81DF7E008A669A /* 03_Filipeni.mp3 */; };
+		DDF0C2762C81DF8E008A669A /* 04_Filipeni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1772C81DF7E008A669A /* 04_Filipeni.mp3 */; };
+		DDF0C2772C81DF8E008A669A /* 02_Filipeni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1782C81DF7E008A669A /* 02_Filipeni.mp3 */; };
+		DDF0C2782C81DF8E008A669A /* 01_Filipeni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1792C81DF7E008A669A /* 01_Filipeni.mp3 */; };
+		DDF0C2792C81DF8E008A669A /* 09_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C17B2C81DF80008A669A /* 09_Evrei.mp3 */; };
+		DDF0C27A2C81DF8E008A669A /* 10_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C17C2C81DF80008A669A /* 10_Evrei.mp3 */; };
+		DDF0C27B2C81DF8E008A669A /* 04_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C17D2C81DF80008A669A /* 04_Evrei.mp3 */; };
+		DDF0C27C2C81DF8E008A669A /* 02_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C17E2C81DF80008A669A /* 02_Evrei.mp3 */; };
+		DDF0C27D2C81DF8E008A669A /* 08_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C17F2C81DF80008A669A /* 08_Evrei.mp3 */; };
+		DDF0C27E2C81DF8E008A669A /* 05_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1802C81DF80008A669A /* 05_Evrei.mp3 */; };
+		DDF0C27F2C81DF8E008A669A /* 11_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1812C81DF80008A669A /* 11_Evrei.mp3 */; };
+		DDF0C2802C81DF8E008A669A /* 03_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1822C81DF80008A669A /* 03_Evrei.mp3 */; };
+		DDF0C2812C81DF8E008A669A /* 12_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1832C81DF80008A669A /* 12_Evrei.mp3 */; };
+		DDF0C2822C81DF8E008A669A /* 06_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1842C81DF80008A669A /* 06_Evrei.mp3 */; };
+		DDF0C2832C81DF8E008A669A /* 07_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1852C81DF80008A669A /* 07_Evrei.mp3 */; };
+		DDF0C2842C81DF8E008A669A /* 13_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1862C81DF80008A669A /* 13_Evrei.mp3 */; };
+		DDF0C2852C81DF8E008A669A /* 01_Evrei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1872C81DF80008A669A /* 01_Evrei.mp3 */; };
+		DDF0C2862C81DF8E008A669A /* 02_1-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1892C81DF80008A669A /* 02_1-Tesaloniceni.mp3 */; };
+		DDF0C2872C81DF8E008A669A /* 01_1-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C18A2C81DF80008A669A /* 01_1-Tesaloniceni.mp3 */; };
+		DDF0C2882C81DF8E008A669A /* 04_1-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C18B2C81DF80008A669A /* 04_1-Tesaloniceni.mp3 */; };
+		DDF0C2892C81DF8E008A669A /* 05_1-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C18C2C81DF80008A669A /* 05_1-Tesaloniceni.mp3 */; };
+		DDF0C28A2C81DF8E008A669A /* 03_1-Tesaloniceni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C18D2C81DF80008A669A /* 03_1-Tesaloniceni.mp3 */; };
+		DDF0C28B2C81DF8E008A669A /* 03_Galateni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C18F2C81DF81008A669A /* 03_Galateni.mp3 */; };
+		DDF0C28C2C81DF8E008A669A /* 04_Galateni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1902C81DF81008A669A /* 04_Galateni.mp3 */; };
+		DDF0C28D2C81DF8E008A669A /* 05_Galateni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1912C81DF81008A669A /* 05_Galateni.mp3 */; };
+		DDF0C28E2C81DF8E008A669A /* 02_Galateni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1922C81DF81008A669A /* 02_Galateni.mp3 */; };
+		DDF0C28F2C81DF8E008A669A /* 06_Galateni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1932C81DF81008A669A /* 06_Galateni.mp3 */; };
+		DDF0C2902C81DF8E008A669A /* 01_Galateni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1942C81DF81008A669A /* 01_Galateni.mp3 */; };
+		DDF0C2912C81DF8E008A669A /* 07_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1962C81DF83008A669A /* 07_Apocalipsa.mp3 */; };
+		DDF0C2922C81DF8E008A669A /* 12_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1972C81DF83008A669A /* 12_Apocalipsa.mp3 */; };
+		DDF0C2932C81DF8E008A669A /* 08_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1982C81DF83008A669A /* 08_Apocalipsa.mp3 */; };
+		DDF0C2942C81DF8E008A669A /* 15_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1992C81DF83008A669A /* 15_Apocalipsa.mp3 */; };
+		DDF0C2952C81DF8E008A669A /* 01_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C19A2C81DF83008A669A /* 01_Apocalipsa.mp3 */; };
+		DDF0C2962C81DF8E008A669A /* 14_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C19B2C81DF83008A669A /* 14_Apocalipsa.mp3 */; };
+		DDF0C2972C81DF8E008A669A /* 09_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C19C2C81DF83008A669A /* 09_Apocalipsa.mp3 */; };
+		DDF0C2982C81DF8E008A669A /* 13_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C19D2C81DF83008A669A /* 13_Apocalipsa.mp3 */; };
+		DDF0C2992C81DF8E008A669A /* 06_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C19E2C81DF83008A669A /* 06_Apocalipsa.mp3 */; };
+		DDF0C29A2C81DF8E008A669A /* 11_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C19F2C81DF83008A669A /* 11_Apocalipsa.mp3 */; };
+		DDF0C29B2C81DF8E008A669A /* 04_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A02C81DF83008A669A /* 04_Apocalipsa.mp3 */; };
+		DDF0C29C2C81DF8E008A669A /* 19_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A12C81DF83008A669A /* 19_Apocalipsa.mp3 */; };
+		DDF0C29D2C81DF8E008A669A /* 03_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A22C81DF83008A669A /* 03_Apocalipsa.mp3 */; };
+		DDF0C29E2C81DF8E008A669A /* 16_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A32C81DF83008A669A /* 16_Apocalipsa.mp3 */; };
+		DDF0C29F2C81DF8E008A669A /* 17_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A42C81DF83008A669A /* 17_Apocalipsa.mp3 */; };
+		DDF0C2A02C81DF8E008A669A /* 02_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A52C81DF83008A669A /* 02_Apocalipsa.mp3 */; };
+		DDF0C2A12C81DF8E008A669A /* 18_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A62C81DF83008A669A /* 18_Apocalipsa.mp3 */; };
+		DDF0C2A22C81DF8E008A669A /* 05_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A72C81DF83008A669A /* 05_Apocalipsa.mp3 */; };
+		DDF0C2A32C81DF8E008A669A /* 10_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A82C81DF83008A669A /* 10_Apocalipsa.mp3 */; };
+		DDF0C2A42C81DF8E008A669A /* 22_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1A92C81DF83008A669A /* 22_Apocalipsa.mp3 */; };
+		DDF0C2A52C81DF8E008A669A /* 20_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1AA2C81DF83008A669A /* 20_Apocalipsa.mp3 */; };
+		DDF0C2A62C81DF8E008A669A /* 21_Apocalipsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1AB2C81DF83008A669A /* 21_Apocalipsa.mp3 */; };
+		DDF0C2A72C81DF8E008A669A /* 27_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1AE2C81DF8D008A669A /* 27_Faptele-Apostolilor.mp3 */; };
+		DDF0C2A82C81DF8E008A669A /* 06_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1AF2C81DF8D008A669A /* 06_Faptele-Apostolilor.mp3 */; };
+		DDF0C2A92C81DF8E008A669A /* 12_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B02C81DF8D008A669A /* 12_Faptele-Apostolilor.mp3 */; };
+		DDF0C2AA2C81DF8E008A669A /* 19_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B12C81DF8D008A669A /* 19_Faptele-Apostolilor.mp3 */; };
+		DDF0C2AB2C81DF8E008A669A /* 14_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B22C81DF8D008A669A /* 14_Faptele-Apostolilor.mp3 */; };
+		DDF0C2AC2C81DF8E008A669A /* 21_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B32C81DF8D008A669A /* 21_Faptele-Apostolilor.mp3 */; };
+		DDF0C2AD2C81DF8E008A669A /* 26_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B42C81DF8D008A669A /* 26_Faptele-Apostolilor.mp3 */; };
+		DDF0C2AE2C81DF8E008A669A /* 13_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B52C81DF8D008A669A /* 13_Faptele-Apostolilor.mp3 */; };
+		DDF0C2AF2C81DF8E008A669A /* 07_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B62C81DF8D008A669A /* 07_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B02C81DF8E008A669A /* 18_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B72C81DF8D008A669A /* 18_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B12C81DF8E008A669A /* 15_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B82C81DF8D008A669A /* 15_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B22C81DF8E008A669A /* 01_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1B92C81DF8D008A669A /* 01_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B32C81DF8E008A669A /* 20_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1BA2C81DF8D008A669A /* 20_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B42C81DF8E008A669A /* 09_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1BB2C81DF8D008A669A /* 09_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B52C81DF8E008A669A /* 28_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1BC2C81DF8D008A669A /* 28_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B62C81DF8E008A669A /* 04_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1BD2C81DF8D008A669A /* 04_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B72C81DF8E008A669A /* 10_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1BE2C81DF8D008A669A /* 10_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B82C81DF8E008A669A /* 25_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1BF2C81DF8D008A669A /* 25_Faptele-Apostolilor.mp3 */; };
+		DDF0C2B92C81DF8E008A669A /* 23_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C02C81DF8D008A669A /* 23_Faptele-Apostolilor.mp3 */; };
+		DDF0C2BA2C81DF8E008A669A /* 02_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C12C81DF8D008A669A /* 02_Faptele-Apostolilor.mp3 */; };
+		DDF0C2BB2C81DF8E008A669A /* 16_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C22C81DF8D008A669A /* 16_Faptele-Apostolilor.mp3 */; };
+		DDF0C2BC2C81DF8E008A669A /* 08_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C32C81DF8D008A669A /* 08_Faptele-Apostolilor.mp3 */; };
+		DDF0C2BD2C81DF8E008A669A /* 11_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C42C81DF8D008A669A /* 11_Faptele-Apostolilor.mp3 */; };
+		DDF0C2BE2C81DF8E008A669A /* 05_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C52C81DF8D008A669A /* 05_Faptele-Apostolilor.mp3 */; };
+		DDF0C2BF2C81DF8E008A669A /* 24_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C62C81DF8D008A669A /* 24_Faptele-Apostolilor.mp3 */; };
+		DDF0C2C02C81DF8E008A669A /* 22_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C72C81DF8D008A669A /* 22_Faptele-Apostolilor.mp3 */; };
+		DDF0C2C12C81DF8E008A669A /* 17_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C82C81DF8D008A669A /* 17_Faptele-Apostolilor.mp3 */; };
+		DDF0C2C22C81DF8E008A669A /* 03_Faptele-Apostolilor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C1C92C81DF8D008A669A /* 03_Faptele-Apostolilor.mp3 */; };
+		DDF0C2C52C81E026008A669A /* 01_Iuda.nonexistent in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C2C42C81E026008A669A /* 01_Iuda.nonexistent */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +312,256 @@
 		DD8963E02C7F510300428C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD8963E32C7F510300428C12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD8963E52C7F510300428C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF0C0B72C81DF62008A669A /* 01_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0B82C81DF62008A669A /* 09_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0B92C81DF62008A669A /* 10_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0BA2C81DF62008A669A /* 06_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0BB2C81DF62008A669A /* 08_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0BC2C81DF62008A669A /* 11_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0BD2C81DF62008A669A /* 07_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0BE2C81DF62008A669A /* 16_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0BF2C81DF62008A669A /* 13_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C02C81DF62008A669A /* 05_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C12C81DF62008A669A /* 02_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C22C81DF62008A669A /* 14_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C32C81DF62008A669A /* 03_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C42C81DF62008A669A /* 15_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C52C81DF62008A669A /* 12_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C62C81DF62008A669A /* 04_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_1-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0C82C81DF62008A669A /* 04_Iacov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Iacov.mp3; sourceTree = "<group>"; };
+		DDF0C0C92C81DF62008A669A /* 02_Iacov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Iacov.mp3; sourceTree = "<group>"; };
+		DDF0C0CA2C81DF62008A669A /* 05_Iacov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Iacov.mp3; sourceTree = "<group>"; };
+		DDF0C0CB2C81DF62008A669A /* 03_Iacov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Iacov.mp3; sourceTree = "<group>"; };
+		DDF0C0CC2C81DF62008A669A /* 01_Iacov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Iacov.mp3; sourceTree = "<group>"; };
+		DDF0C0CE2C81DF65008A669A /* 09_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0CF2C81DF65008A669A /* 04_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D02C81DF65008A669A /* 10_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D12C81DF65008A669A /* 02_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D22C81DF65008A669A /* 16_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D32C81DF65008A669A /* 08_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D42C81DF65008A669A /* 11_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D52C81DF65008A669A /* 05_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D62C81DF65008A669A /* 03_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D72C81DF65008A669A /* 06_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D82C81DF65008A669A /* 12_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0D92C81DF65008A669A /* 14_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0DA2C81DF65008A669A /* 13_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0DB2C81DF65008A669A /* 07_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0DC2C81DF65008A669A /* 15_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0DD2C81DF65008A669A /* 01_Marcu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Marcu.mp3; sourceTree = "<group>"; };
+		DDF0C0DF2C81DF66008A669A /* 03_2-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_2-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C0E02C81DF66008A669A /* 04_2-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_2-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C0E12C81DF66008A669A /* 01_2-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_2-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C0E22C81DF66008A669A /* 02_2-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_2-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C0E42C81DF67008A669A /* 06_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0E52C81DF67008A669A /* 09_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0E62C81DF67008A669A /* 10_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0E72C81DF67008A669A /* 01_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0E82C81DF67008A669A /* 07_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0E92C81DF67008A669A /* 08_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0EA2C81DF67008A669A /* 11_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0EB2C81DF67008A669A /* 02_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0EC2C81DF67008A669A /* 05_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0ED2C81DF67008A669A /* 13_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0EE2C81DF67008A669A /* 04_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0EF2C81DF67008A669A /* 12_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0F02C81DF67008A669A /* 03_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_2-Corinteni.mp3"; sourceTree = "<group>"; };
+		DDF0C0F22C81DF6E008A669A /* 21_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 21_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0F32C81DF6E008A669A /* 03_Matei .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_Matei .mp3"; sourceTree = "<group>"; };
+		DDF0C0F42C81DF6E008A669A /* 06_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0F52C81DF6E008A669A /* 04_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0F62C81DF6E008A669A /* 23_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 23_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0F72C81DF6E008A669A /* 02_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0F82C81DF6E008A669A /* 17_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 17_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0F92C81DF6E008A669A /* 28_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 28_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0FA2C81DF6E008A669A /* 01_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0FB2C81DF6E008A669A /* 10_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0FC2C81DF6E008A669A /* 27_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 27_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0FD2C81DF6E008A669A /* 13_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0FE2C81DF6E008A669A /* 08_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C0FF2C81DF6E008A669A /* 25_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 25_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C1002C81DF6E008A669A /* 19_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 19_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C1012C81DF6E008A669A /* 22_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 22_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C1022C81DF6E008A669A /* 15_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15_Matei.mp3; sourceTree = "<group>"; };
+		DDF0C1042C81DF6E008A669A /* 03_2-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_2-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1052C81DF6E008A669A /* 01_2-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_2-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1062C81DF6F008A669A /* 02_2-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_2-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1082C81DF6F008A669A /* 04_1-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_1-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C1092C81DF6F008A669A /* 03_1-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_1-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C10A2C81DF6F008A669A /* 06_1-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06_1-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C10B2C81DF6F008A669A /* 02_1-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_1-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C10C2C81DF6F008A669A /* 05_1-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05_1-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C10D2C81DF6F008A669A /* 01_1-Timotei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_1-Timotei.mp3"; sourceTree = "<group>"; };
+		DDF0C10F2C81DF70008A669A /* 02_1-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_1-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1102C81DF70008A669A /* 04_1-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_1-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1112C81DF70008A669A /* 01_1-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_1-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1122C81DF70008A669A /* 03_1-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_1-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1132C81DF70008A669A /* 05_1-Petru.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05_1-Petru.mp3"; sourceTree = "<group>"; };
+		DDF0C1152C81DF70008A669A /* 05_1-Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05_1-Ioan.mp3"; sourceTree = "<group>"; };
+		DDF0C1162C81DF70008A669A /* 02_1-Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_1-Ioan.mp3"; sourceTree = "<group>"; };
+		DDF0C1172C81DF70008A669A /* 01_1-Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_1-Ioan.mp3"; sourceTree = "<group>"; };
+		DDF0C1182C81DF70008A669A /* 04_1-Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_1-Ioan.mp3"; sourceTree = "<group>"; };
+		DDF0C1192C81DF70008A669A /* 03_1-Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_1-Ioan.mp3"; sourceTree = "<group>"; };
+		DDF0C11B2C81DF71008A669A /* 03_Coloseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Coloseni.mp3; sourceTree = "<group>"; };
+		DDF0C11C2C81DF71008A669A /* 04_Coloseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Coloseni.mp3; sourceTree = "<group>"; };
+		DDF0C11D2C81DF71008A669A /* 02_Coloseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Coloseni.mp3; sourceTree = "<group>"; };
+		DDF0C11E2C81DF71008A669A /* 01_Coloseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Coloseni.mp3; sourceTree = "<group>"; };
+		DDF0C1202C81DF73008A669A /* 07_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1212C81DF73008A669A /* 16_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1222C81DF73008A669A /* 13_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1232C81DF73008A669A /* 02_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1242C81DF73008A669A /* 05_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1252C81DF73008A669A /* 08_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1262C81DF73008A669A /* 14_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1272C81DF73008A669A /* 11_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1282C81DF73008A669A /* 12_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1292C81DF73008A669A /* 03_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C12A2C81DF73008A669A /* 06_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C12B2C81DF73008A669A /* 10_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C12C2C81DF73008A669A /* 01_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C12D2C81DF73008A669A /* 04_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C12E2C81DF73008A669A /* 09_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C12F2C81DF73008A669A /* 15_Romani.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15_Romani.mp3; sourceTree = "<group>"; };
+		DDF0C1312C81DF74008A669A /* 03_2-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_2-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C1322C81DF74008A669A /* 02_2-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_2-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C1332C81DF74008A669A /* 01_2-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_2-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C1352C81DF74008A669A /* 03_Tit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Tit.mp3; sourceTree = "<group>"; };
+		DDF0C1362C81DF74008A669A /* 02_Tit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Tit.mp3; sourceTree = "<group>"; };
+		DDF0C1372C81DF74008A669A /* 01_Tit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Tit.mp3; sourceTree = "<group>"; };
+		DDF0C1392C81DF74008A669A /* 01_3-Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_3-Ioan.mp3"; sourceTree = "<group>"; };
+		DDF0C13B2C81DF74008A669A /* 01_2-Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_2-Ioan.mp3"; sourceTree = "<group>"; };
+		DDF0C13D2C81DF79008A669A /* 03_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C13E2C81DF79008A669A /* 02_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C13F2C81DF79008A669A /* 09_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1402C81DF79008A669A /* 08_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1412C81DF79008A669A /* 14_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1422C81DF79008A669A /* 15_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1432C81DF79008A669A /* 20_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 20_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1442C81DF79008A669A /* 21_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 21_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1452C81DF79008A669A /* 13_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1462C81DF79008A669A /* 12_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1472C81DF79008A669A /* 19_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 19_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1482C81DF79008A669A /* 18_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 18_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1492C81DF79008A669A /* 04_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C14A2C81DF79008A669A /* 05_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C14B2C81DF79008A669A /* 23_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 23_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C14C2C81DF79008A669A /* 22_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 22_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C14D2C81DF79008A669A /* 17_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 17_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C14E2C81DF79008A669A /* 16_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C14F2C81DF79008A669A /* 01_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1502C81DF79008A669A /* 07_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1512C81DF79008A669A /* 06_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1522C81DF79008A669A /* Contract avocat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Contract avocat.pdf"; sourceTree = "<group>"; };
+		DDF0C1532C81DF79008A669A /* 24_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 24_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1542C81DF79008A669A /* 10_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1552C81DF79008A669A /* 11_Luca.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Luca.mp3; sourceTree = "<group>"; };
+		DDF0C1572C81DF7A008A669A /* 04_Efeseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Efeseni.mp3; sourceTree = "<group>"; };
+		DDF0C1582C81DF7A008A669A /* 01_Efeseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Efeseni.mp3; sourceTree = "<group>"; };
+		DDF0C1592C81DF7A008A669A /* 02_Efeseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Efeseni.mp3; sourceTree = "<group>"; };
+		DDF0C15A2C81DF7A008A669A /* 05_Efeseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Efeseni.mp3; sourceTree = "<group>"; };
+		DDF0C15B2C81DF7A008A669A /* 06_Efeseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Efeseni.mp3; sourceTree = "<group>"; };
+		DDF0C15C2C81DF7A008A669A /* 03_Efeseni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Efeseni.mp3; sourceTree = "<group>"; };
+		DDF0C15E2C81DF7E008A669A /* 16_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C15F2C81DF7E008A669A /* 17_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 17_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1602C81DF7E008A669A /* 01_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1612C81DF7E008A669A /* 06_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1622C81DF7E008A669A /* 07_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1632C81DF7E008A669A /* 11_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1642C81DF7E008A669A /* 10_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1652C81DF7E008A669A /* 02_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1662C81DF7E008A669A /* 03_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1672C81DF7E008A669A /* 08_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1682C81DF7E008A669A /* 09_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1692C81DF7E008A669A /* 15_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C16A2C81DF7E008A669A /* 14_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C16B2C81DF7E008A669A /* 21_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 21_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C16C2C81DF7E008A669A /* 20_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 20_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C16D2C81DF7E008A669A /* 12_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C16E2C81DF7E008A669A /* 13_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C16F2C81DF7E008A669A /* 18_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 18_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1702C81DF7E008A669A /* 19_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 19_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1712C81DF7E008A669A /* 05_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1722C81DF7E008A669A /* 04_Ioan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Ioan.mp3; sourceTree = "<group>"; };
+		DDF0C1742C81DF7E008A669A /* 01_Filimon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Filimon.mp3; sourceTree = "<group>"; };
+		DDF0C1762C81DF7E008A669A /* 03_Filipeni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Filipeni.mp3; sourceTree = "<group>"; };
+		DDF0C1772C81DF7E008A669A /* 04_Filipeni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Filipeni.mp3; sourceTree = "<group>"; };
+		DDF0C1782C81DF7E008A669A /* 02_Filipeni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Filipeni.mp3; sourceTree = "<group>"; };
+		DDF0C1792C81DF7E008A669A /* 01_Filipeni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Filipeni.mp3; sourceTree = "<group>"; };
+		DDF0C17B2C81DF80008A669A /* 09_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C17C2C81DF80008A669A /* 10_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C17D2C81DF80008A669A /* 04_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C17E2C81DF80008A669A /* 02_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C17F2C81DF80008A669A /* 08_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1802C81DF80008A669A /* 05_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1812C81DF80008A669A /* 11_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1822C81DF80008A669A /* 03_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1832C81DF80008A669A /* 12_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1842C81DF80008A669A /* 06_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1852C81DF80008A669A /* 07_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1862C81DF80008A669A /* 13_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1872C81DF80008A669A /* 01_Evrei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Evrei.mp3; sourceTree = "<group>"; };
+		DDF0C1892C81DF80008A669A /* 02_1-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_1-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C18A2C81DF80008A669A /* 01_1-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_1-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C18B2C81DF80008A669A /* 04_1-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_1-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C18C2C81DF80008A669A /* 05_1-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05_1-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C18D2C81DF80008A669A /* 03_1-Tesaloniceni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_1-Tesaloniceni.mp3"; sourceTree = "<group>"; };
+		DDF0C18F2C81DF81008A669A /* 03_Galateni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Galateni.mp3; sourceTree = "<group>"; };
+		DDF0C1902C81DF81008A669A /* 04_Galateni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Galateni.mp3; sourceTree = "<group>"; };
+		DDF0C1912C81DF81008A669A /* 05_Galateni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Galateni.mp3; sourceTree = "<group>"; };
+		DDF0C1922C81DF81008A669A /* 02_Galateni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Galateni.mp3; sourceTree = "<group>"; };
+		DDF0C1932C81DF81008A669A /* 06_Galateni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Galateni.mp3; sourceTree = "<group>"; };
+		DDF0C1942C81DF81008A669A /* 01_Galateni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Galateni.mp3; sourceTree = "<group>"; };
+		DDF0C1962C81DF83008A669A /* 07_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1972C81DF83008A669A /* 12_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1982C81DF83008A669A /* 08_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1992C81DF83008A669A /* 15_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C19A2C81DF83008A669A /* 01_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 01_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C19B2C81DF83008A669A /* 14_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C19C2C81DF83008A669A /* 09_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C19D2C81DF83008A669A /* 13_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C19E2C81DF83008A669A /* 06_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C19F2C81DF83008A669A /* 11_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A02C81DF83008A669A /* 04_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A12C81DF83008A669A /* 19_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 19_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A22C81DF83008A669A /* 03_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A32C81DF83008A669A /* 16_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A42C81DF83008A669A /* 17_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 17_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A52C81DF83008A669A /* 02_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A62C81DF83008A669A /* 18_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 18_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A72C81DF83008A669A /* 05_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 05_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A82C81DF83008A669A /* 10_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1A92C81DF83008A669A /* 22_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 22_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1AA2C81DF83008A669A /* 20_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 20_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1AB2C81DF83008A669A /* 21_Apocalipsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 21_Apocalipsa.mp3; sourceTree = "<group>"; };
+		DDF0C1AE2C81DF8D008A669A /* 27_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "27_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1AF2C81DF8D008A669A /* 06_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B02C81DF8D008A669A /* 12_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B12C81DF8D008A669A /* 19_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "19_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B22C81DF8D008A669A /* 14_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B32C81DF8D008A669A /* 21_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "21_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B42C81DF8D008A669A /* 26_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "26_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B52C81DF8D008A669A /* 13_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B62C81DF8D008A669A /* 07_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B72C81DF8D008A669A /* 18_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "18_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B82C81DF8D008A669A /* 15_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1B92C81DF8D008A669A /* 01_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1BA2C81DF8D008A669A /* 20_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "20_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1BB2C81DF8D008A669A /* 09_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1BC2C81DF8D008A669A /* 28_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "28_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1BD2C81DF8D008A669A /* 04_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1BE2C81DF8D008A669A /* 10_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1BF2C81DF8D008A669A /* 25_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "25_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C02C81DF8D008A669A /* 23_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "23_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C12C81DF8D008A669A /* 02_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C22C81DF8D008A669A /* 16_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C32C81DF8D008A669A /* 08_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C42C81DF8D008A669A /* 11_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C52C81DF8D008A669A /* 05_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C62C81DF8D008A669A /* 24_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "24_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C72C81DF8D008A669A /* 22_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "22_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C82C81DF8D008A669A /* 17_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "17_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C1C92C81DF8D008A669A /* 03_Faptele-Apostolilor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_Faptele-Apostolilor.mp3"; sourceTree = "<group>"; };
+		DDF0C2C42C81E026008A669A /* 01_Iuda.nonexistent */ = {isa = PBXFileReference; lastKnownFileType = text; path = 01_Iuda.nonexistent; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +652,7 @@
 		DD6B09DB2C7F6E4E0077A0F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DDF0C0B42C81DEE7008A669A /* Audio */,
 				DD6B09E22C7F78C30077A0F9 /* Colors */,
 				DD6744A62C8077650022971D /* Icons */,
 				DD6744AB2C807D570022971D /* Fonts */,
@@ -212,6 +713,487 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DDF0C0B42C81DEE7008A669A /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0B52C81DF03008A669A /* NoulTestament */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		DDF0C0B52C81DF03008A669A /* NoulTestament */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0F12C81DF6E008A669A /* 01_Matei */,
+				DDF0C0CD2C81DF65008A669A /* 02_Marcu */,
+				DDF0C13C2C81DF79008A669A /* 03_Luca */,
+				DDF0C15D2C81DF7E008A669A /* 04_Ioan */,
+				DDF0C1AD2C81DF8D008A669A /* 05_Faptele-Apostolilor */,
+				DDF0C11F2C81DF73008A669A /* 06_Romani */,
+				DDF0C0B62C81DF62008A669A /* 07_1-Corinteni */,
+				DDF0C0E32C81DF67008A669A /* 08_2-Corinteni */,
+				DDF0C18E2C81DF81008A669A /* 09_Galateni */,
+				DDF0C1562C81DF7A008A669A /* 10_Efeseni */,
+				DDF0C1752C81DF7E008A669A /* 11_Filipeni */,
+				DDF0C11A2C81DF71008A669A /* 12_Coloseni */,
+				DDF0C1882C81DF80008A669A /* 13_1-Tesaloniceni */,
+				DDF0C1302C81DF74008A669A /* 14_2-Tesaloniceni */,
+				DDF0C1072C81DF6F008A669A /* 15_1-Timotei */,
+				DDF0C0DE2C81DF66008A669A /* 16_2-Timotei */,
+				DDF0C1342C81DF74008A669A /* 17_Tit */,
+				DDF0C1732C81DF7E008A669A /* 18_Filimon */,
+				DDF0C17A2C81DF80008A669A /* 19_Evrei */,
+				DDF0C0C72C81DF62008A669A /* 20_Iacov */,
+				DDF0C10E2C81DF70008A669A /* 21_1-Petru */,
+				DDF0C1032C81DF6E008A669A /* 22_2-Petru */,
+				DDF0C1142C81DF70008A669A /* 23_1-Ioan */,
+				DDF0C13A2C81DF74008A669A /* 24_2-Ioan */,
+				DDF0C1382C81DF74008A669A /* 25_3-Ioan */,
+				DDF0C1AC2C81DF8D008A669A /* 26_Iuda */,
+				DDF0C1952C81DF83008A669A /* 27_Apocalipsa */,
+			);
+			path = NoulTestament;
+			sourceTree = "<group>";
+		};
+		DDF0C0B62C81DF62008A669A /* 07_1-Corinteni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0B72C81DF62008A669A /* 01_1-Corinteni.mp3 */,
+				DDF0C0B82C81DF62008A669A /* 09_1-Corinteni.mp3 */,
+				DDF0C0B92C81DF62008A669A /* 10_1-Corinteni.mp3 */,
+				DDF0C0BA2C81DF62008A669A /* 06_1-Corinteni.mp3 */,
+				DDF0C0BB2C81DF62008A669A /* 08_1-Corinteni.mp3 */,
+				DDF0C0BC2C81DF62008A669A /* 11_1-Corinteni.mp3 */,
+				DDF0C0BD2C81DF62008A669A /* 07_1-Corinteni.mp3 */,
+				DDF0C0BE2C81DF62008A669A /* 16_1-Corinteni.mp3 */,
+				DDF0C0BF2C81DF62008A669A /* 13_1-Corinteni.mp3 */,
+				DDF0C0C02C81DF62008A669A /* 05_1-Corinteni.mp3 */,
+				DDF0C0C12C81DF62008A669A /* 02_1-Corinteni.mp3 */,
+				DDF0C0C22C81DF62008A669A /* 14_1-Corinteni.mp3 */,
+				DDF0C0C32C81DF62008A669A /* 03_1-Corinteni.mp3 */,
+				DDF0C0C42C81DF62008A669A /* 15_1-Corinteni.mp3 */,
+				DDF0C0C52C81DF62008A669A /* 12_1-Corinteni.mp3 */,
+				DDF0C0C62C81DF62008A669A /* 04_1-Corinteni.mp3 */,
+			);
+			path = "07_1-Corinteni";
+			sourceTree = "<group>";
+		};
+		DDF0C0C72C81DF62008A669A /* 20_Iacov */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0C82C81DF62008A669A /* 04_Iacov.mp3 */,
+				DDF0C0C92C81DF62008A669A /* 02_Iacov.mp3 */,
+				DDF0C0CA2C81DF62008A669A /* 05_Iacov.mp3 */,
+				DDF0C0CB2C81DF62008A669A /* 03_Iacov.mp3 */,
+				DDF0C0CC2C81DF62008A669A /* 01_Iacov.mp3 */,
+			);
+			path = 20_Iacov;
+			sourceTree = "<group>";
+		};
+		DDF0C0CD2C81DF65008A669A /* 02_Marcu */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0CE2C81DF65008A669A /* 09_Marcu.mp3 */,
+				DDF0C0CF2C81DF65008A669A /* 04_Marcu.mp3 */,
+				DDF0C0D02C81DF65008A669A /* 10_Marcu.mp3 */,
+				DDF0C0D12C81DF65008A669A /* 02_Marcu.mp3 */,
+				DDF0C0D22C81DF65008A669A /* 16_Marcu.mp3 */,
+				DDF0C0D32C81DF65008A669A /* 08_Marcu.mp3 */,
+				DDF0C0D42C81DF65008A669A /* 11_Marcu.mp3 */,
+				DDF0C0D52C81DF65008A669A /* 05_Marcu.mp3 */,
+				DDF0C0D62C81DF65008A669A /* 03_Marcu.mp3 */,
+				DDF0C0D72C81DF65008A669A /* 06_Marcu.mp3 */,
+				DDF0C0D82C81DF65008A669A /* 12_Marcu.mp3 */,
+				DDF0C0D92C81DF65008A669A /* 14_Marcu.mp3 */,
+				DDF0C0DA2C81DF65008A669A /* 13_Marcu.mp3 */,
+				DDF0C0DB2C81DF65008A669A /* 07_Marcu.mp3 */,
+				DDF0C0DC2C81DF65008A669A /* 15_Marcu.mp3 */,
+				DDF0C0DD2C81DF65008A669A /* 01_Marcu.mp3 */,
+			);
+			path = 02_Marcu;
+			sourceTree = "<group>";
+		};
+		DDF0C0DE2C81DF66008A669A /* 16_2-Timotei */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0DF2C81DF66008A669A /* 03_2-Timotei.mp3 */,
+				DDF0C0E02C81DF66008A669A /* 04_2-Timotei.mp3 */,
+				DDF0C0E12C81DF66008A669A /* 01_2-Timotei.mp3 */,
+				DDF0C0E22C81DF66008A669A /* 02_2-Timotei.mp3 */,
+			);
+			path = "16_2-Timotei";
+			sourceTree = "<group>";
+		};
+		DDF0C0E32C81DF67008A669A /* 08_2-Corinteni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0E42C81DF67008A669A /* 06_2-Corinteni.mp3 */,
+				DDF0C0E52C81DF67008A669A /* 09_2-Corinteni.mp3 */,
+				DDF0C0E62C81DF67008A669A /* 10_2-Corinteni.mp3 */,
+				DDF0C0E72C81DF67008A669A /* 01_2-Corinteni.mp3 */,
+				DDF0C0E82C81DF67008A669A /* 07_2-Corinteni.mp3 */,
+				DDF0C0E92C81DF67008A669A /* 08_2-Corinteni.mp3 */,
+				DDF0C0EA2C81DF67008A669A /* 11_2-Corinteni.mp3 */,
+				DDF0C0EB2C81DF67008A669A /* 02_2-Corinteni.mp3 */,
+				DDF0C0EC2C81DF67008A669A /* 05_2-Corinteni.mp3 */,
+				DDF0C0ED2C81DF67008A669A /* 13_2-Corinteni.mp3 */,
+				DDF0C0EE2C81DF67008A669A /* 04_2-Corinteni.mp3 */,
+				DDF0C0EF2C81DF67008A669A /* 12_2-Corinteni.mp3 */,
+				DDF0C0F02C81DF67008A669A /* 03_2-Corinteni.mp3 */,
+			);
+			path = "08_2-Corinteni";
+			sourceTree = "<group>";
+		};
+		DDF0C0F12C81DF6E008A669A /* 01_Matei */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C0F22C81DF6E008A669A /* 21_Matei.mp3 */,
+				DDF0C0F32C81DF6E008A669A /* 03_Matei .mp3 */,
+				DDF0C0F42C81DF6E008A669A /* 06_Matei.mp3 */,
+				DDF0C0F52C81DF6E008A669A /* 04_Matei.mp3 */,
+				DDF0C0F62C81DF6E008A669A /* 23_Matei.mp3 */,
+				DDF0C0F72C81DF6E008A669A /* 02_Matei.mp3 */,
+				DDF0C0F82C81DF6E008A669A /* 17_Matei.mp3 */,
+				DDF0C0F92C81DF6E008A669A /* 28_Matei.mp3 */,
+				DDF0C0FA2C81DF6E008A669A /* 01_Matei.mp3 */,
+				DDF0C0FB2C81DF6E008A669A /* 10_Matei.mp3 */,
+				DDF0C0FC2C81DF6E008A669A /* 27_Matei.mp3 */,
+				DDF0C0FD2C81DF6E008A669A /* 13_Matei.mp3 */,
+				DDF0C0FE2C81DF6E008A669A /* 08_Matei.mp3 */,
+				DDF0C0FF2C81DF6E008A669A /* 25_Matei.mp3 */,
+				DDF0C1002C81DF6E008A669A /* 19_Matei.mp3 */,
+				DDF0C1012C81DF6E008A669A /* 22_Matei.mp3 */,
+				DDF0C1022C81DF6E008A669A /* 15_Matei.mp3 */,
+			);
+			path = 01_Matei;
+			sourceTree = "<group>";
+		};
+		DDF0C1032C81DF6E008A669A /* 22_2-Petru */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1042C81DF6E008A669A /* 03_2-Petru.mp3 */,
+				DDF0C1052C81DF6E008A669A /* 01_2-Petru.mp3 */,
+				DDF0C1062C81DF6F008A669A /* 02_2-Petru.mp3 */,
+			);
+			path = "22_2-Petru";
+			sourceTree = "<group>";
+		};
+		DDF0C1072C81DF6F008A669A /* 15_1-Timotei */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1082C81DF6F008A669A /* 04_1-Timotei.mp3 */,
+				DDF0C1092C81DF6F008A669A /* 03_1-Timotei.mp3 */,
+				DDF0C10A2C81DF6F008A669A /* 06_1-Timotei.mp3 */,
+				DDF0C10B2C81DF6F008A669A /* 02_1-Timotei.mp3 */,
+				DDF0C10C2C81DF6F008A669A /* 05_1-Timotei.mp3 */,
+				DDF0C10D2C81DF6F008A669A /* 01_1-Timotei.mp3 */,
+			);
+			path = "15_1-Timotei";
+			sourceTree = "<group>";
+		};
+		DDF0C10E2C81DF70008A669A /* 21_1-Petru */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C10F2C81DF70008A669A /* 02_1-Petru.mp3 */,
+				DDF0C1102C81DF70008A669A /* 04_1-Petru.mp3 */,
+				DDF0C1112C81DF70008A669A /* 01_1-Petru.mp3 */,
+				DDF0C1122C81DF70008A669A /* 03_1-Petru.mp3 */,
+				DDF0C1132C81DF70008A669A /* 05_1-Petru.mp3 */,
+			);
+			path = "21_1-Petru";
+			sourceTree = "<group>";
+		};
+		DDF0C1142C81DF70008A669A /* 23_1-Ioan */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1152C81DF70008A669A /* 05_1-Ioan.mp3 */,
+				DDF0C1162C81DF70008A669A /* 02_1-Ioan.mp3 */,
+				DDF0C1172C81DF70008A669A /* 01_1-Ioan.mp3 */,
+				DDF0C1182C81DF70008A669A /* 04_1-Ioan.mp3 */,
+				DDF0C1192C81DF70008A669A /* 03_1-Ioan.mp3 */,
+			);
+			path = "23_1-Ioan";
+			sourceTree = "<group>";
+		};
+		DDF0C11A2C81DF71008A669A /* 12_Coloseni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C11B2C81DF71008A669A /* 03_Coloseni.mp3 */,
+				DDF0C11C2C81DF71008A669A /* 04_Coloseni.mp3 */,
+				DDF0C11D2C81DF71008A669A /* 02_Coloseni.mp3 */,
+				DDF0C11E2C81DF71008A669A /* 01_Coloseni.mp3 */,
+			);
+			path = 12_Coloseni;
+			sourceTree = "<group>";
+		};
+		DDF0C11F2C81DF73008A669A /* 06_Romani */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1202C81DF73008A669A /* 07_Romani.mp3 */,
+				DDF0C1212C81DF73008A669A /* 16_Romani.mp3 */,
+				DDF0C1222C81DF73008A669A /* 13_Romani.mp3 */,
+				DDF0C1232C81DF73008A669A /* 02_Romani.mp3 */,
+				DDF0C1242C81DF73008A669A /* 05_Romani.mp3 */,
+				DDF0C1252C81DF73008A669A /* 08_Romani.mp3 */,
+				DDF0C1262C81DF73008A669A /* 14_Romani.mp3 */,
+				DDF0C1272C81DF73008A669A /* 11_Romani.mp3 */,
+				DDF0C1282C81DF73008A669A /* 12_Romani.mp3 */,
+				DDF0C1292C81DF73008A669A /* 03_Romani.mp3 */,
+				DDF0C12A2C81DF73008A669A /* 06_Romani.mp3 */,
+				DDF0C12B2C81DF73008A669A /* 10_Romani.mp3 */,
+				DDF0C12C2C81DF73008A669A /* 01_Romani.mp3 */,
+				DDF0C12D2C81DF73008A669A /* 04_Romani.mp3 */,
+				DDF0C12E2C81DF73008A669A /* 09_Romani.mp3 */,
+				DDF0C12F2C81DF73008A669A /* 15_Romani.mp3 */,
+			);
+			path = 06_Romani;
+			sourceTree = "<group>";
+		};
+		DDF0C1302C81DF74008A669A /* 14_2-Tesaloniceni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1312C81DF74008A669A /* 03_2-Tesaloniceni.mp3 */,
+				DDF0C1322C81DF74008A669A /* 02_2-Tesaloniceni.mp3 */,
+				DDF0C1332C81DF74008A669A /* 01_2-Tesaloniceni.mp3 */,
+			);
+			path = "14_2-Tesaloniceni";
+			sourceTree = "<group>";
+		};
+		DDF0C1342C81DF74008A669A /* 17_Tit */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1352C81DF74008A669A /* 03_Tit.mp3 */,
+				DDF0C1362C81DF74008A669A /* 02_Tit.mp3 */,
+				DDF0C1372C81DF74008A669A /* 01_Tit.mp3 */,
+			);
+			path = 17_Tit;
+			sourceTree = "<group>";
+		};
+		DDF0C1382C81DF74008A669A /* 25_3-Ioan */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1392C81DF74008A669A /* 01_3-Ioan.mp3 */,
+			);
+			path = "25_3-Ioan";
+			sourceTree = "<group>";
+		};
+		DDF0C13A2C81DF74008A669A /* 24_2-Ioan */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C13B2C81DF74008A669A /* 01_2-Ioan.mp3 */,
+			);
+			path = "24_2-Ioan";
+			sourceTree = "<group>";
+		};
+		DDF0C13C2C81DF79008A669A /* 03_Luca */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C13D2C81DF79008A669A /* 03_Luca.mp3 */,
+				DDF0C13E2C81DF79008A669A /* 02_Luca.mp3 */,
+				DDF0C13F2C81DF79008A669A /* 09_Luca.mp3 */,
+				DDF0C1402C81DF79008A669A /* 08_Luca.mp3 */,
+				DDF0C1412C81DF79008A669A /* 14_Luca.mp3 */,
+				DDF0C1422C81DF79008A669A /* 15_Luca.mp3 */,
+				DDF0C1432C81DF79008A669A /* 20_Luca.mp3 */,
+				DDF0C1442C81DF79008A669A /* 21_Luca.mp3 */,
+				DDF0C1452C81DF79008A669A /* 13_Luca.mp3 */,
+				DDF0C1462C81DF79008A669A /* 12_Luca.mp3 */,
+				DDF0C1472C81DF79008A669A /* 19_Luca.mp3 */,
+				DDF0C1482C81DF79008A669A /* 18_Luca.mp3 */,
+				DDF0C1492C81DF79008A669A /* 04_Luca.mp3 */,
+				DDF0C14A2C81DF79008A669A /* 05_Luca.mp3 */,
+				DDF0C14B2C81DF79008A669A /* 23_Luca.mp3 */,
+				DDF0C14C2C81DF79008A669A /* 22_Luca.mp3 */,
+				DDF0C14D2C81DF79008A669A /* 17_Luca.mp3 */,
+				DDF0C14E2C81DF79008A669A /* 16_Luca.mp3 */,
+				DDF0C14F2C81DF79008A669A /* 01_Luca.mp3 */,
+				DDF0C1502C81DF79008A669A /* 07_Luca.mp3 */,
+				DDF0C1512C81DF79008A669A /* 06_Luca.mp3 */,
+				DDF0C1522C81DF79008A669A /* Contract avocat.pdf */,
+				DDF0C1532C81DF79008A669A /* 24_Luca.mp3 */,
+				DDF0C1542C81DF79008A669A /* 10_Luca.mp3 */,
+				DDF0C1552C81DF79008A669A /* 11_Luca.mp3 */,
+			);
+			path = 03_Luca;
+			sourceTree = "<group>";
+		};
+		DDF0C1562C81DF7A008A669A /* 10_Efeseni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1572C81DF7A008A669A /* 04_Efeseni.mp3 */,
+				DDF0C1582C81DF7A008A669A /* 01_Efeseni.mp3 */,
+				DDF0C1592C81DF7A008A669A /* 02_Efeseni.mp3 */,
+				DDF0C15A2C81DF7A008A669A /* 05_Efeseni.mp3 */,
+				DDF0C15B2C81DF7A008A669A /* 06_Efeseni.mp3 */,
+				DDF0C15C2C81DF7A008A669A /* 03_Efeseni.mp3 */,
+			);
+			path = 10_Efeseni;
+			sourceTree = "<group>";
+		};
+		DDF0C15D2C81DF7E008A669A /* 04_Ioan */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C15E2C81DF7E008A669A /* 16_Ioan.mp3 */,
+				DDF0C15F2C81DF7E008A669A /* 17_Ioan.mp3 */,
+				DDF0C1602C81DF7E008A669A /* 01_Ioan.mp3 */,
+				DDF0C1612C81DF7E008A669A /* 06_Ioan.mp3 */,
+				DDF0C1622C81DF7E008A669A /* 07_Ioan.mp3 */,
+				DDF0C1632C81DF7E008A669A /* 11_Ioan.mp3 */,
+				DDF0C1642C81DF7E008A669A /* 10_Ioan.mp3 */,
+				DDF0C1652C81DF7E008A669A /* 02_Ioan.mp3 */,
+				DDF0C1662C81DF7E008A669A /* 03_Ioan.mp3 */,
+				DDF0C1672C81DF7E008A669A /* 08_Ioan.mp3 */,
+				DDF0C1682C81DF7E008A669A /* 09_Ioan.mp3 */,
+				DDF0C1692C81DF7E008A669A /* 15_Ioan.mp3 */,
+				DDF0C16A2C81DF7E008A669A /* 14_Ioan.mp3 */,
+				DDF0C16B2C81DF7E008A669A /* 21_Ioan.mp3 */,
+				DDF0C16C2C81DF7E008A669A /* 20_Ioan.mp3 */,
+				DDF0C16D2C81DF7E008A669A /* 12_Ioan.mp3 */,
+				DDF0C16E2C81DF7E008A669A /* 13_Ioan.mp3 */,
+				DDF0C16F2C81DF7E008A669A /* 18_Ioan.mp3 */,
+				DDF0C1702C81DF7E008A669A /* 19_Ioan.mp3 */,
+				DDF0C1712C81DF7E008A669A /* 05_Ioan.mp3 */,
+				DDF0C1722C81DF7E008A669A /* 04_Ioan.mp3 */,
+			);
+			path = 04_Ioan;
+			sourceTree = "<group>";
+		};
+		DDF0C1732C81DF7E008A669A /* 18_Filimon */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1742C81DF7E008A669A /* 01_Filimon.mp3 */,
+			);
+			path = 18_Filimon;
+			sourceTree = "<group>";
+		};
+		DDF0C1752C81DF7E008A669A /* 11_Filipeni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1762C81DF7E008A669A /* 03_Filipeni.mp3 */,
+				DDF0C1772C81DF7E008A669A /* 04_Filipeni.mp3 */,
+				DDF0C1782C81DF7E008A669A /* 02_Filipeni.mp3 */,
+				DDF0C1792C81DF7E008A669A /* 01_Filipeni.mp3 */,
+			);
+			path = 11_Filipeni;
+			sourceTree = "<group>";
+		};
+		DDF0C17A2C81DF80008A669A /* 19_Evrei */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C17B2C81DF80008A669A /* 09_Evrei.mp3 */,
+				DDF0C17C2C81DF80008A669A /* 10_Evrei.mp3 */,
+				DDF0C17D2C81DF80008A669A /* 04_Evrei.mp3 */,
+				DDF0C17E2C81DF80008A669A /* 02_Evrei.mp3 */,
+				DDF0C17F2C81DF80008A669A /* 08_Evrei.mp3 */,
+				DDF0C1802C81DF80008A669A /* 05_Evrei.mp3 */,
+				DDF0C1812C81DF80008A669A /* 11_Evrei.mp3 */,
+				DDF0C1822C81DF80008A669A /* 03_Evrei.mp3 */,
+				DDF0C1832C81DF80008A669A /* 12_Evrei.mp3 */,
+				DDF0C1842C81DF80008A669A /* 06_Evrei.mp3 */,
+				DDF0C1852C81DF80008A669A /* 07_Evrei.mp3 */,
+				DDF0C1862C81DF80008A669A /* 13_Evrei.mp3 */,
+				DDF0C1872C81DF80008A669A /* 01_Evrei.mp3 */,
+			);
+			path = 19_Evrei;
+			sourceTree = "<group>";
+		};
+		DDF0C1882C81DF80008A669A /* 13_1-Tesaloniceni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1892C81DF80008A669A /* 02_1-Tesaloniceni.mp3 */,
+				DDF0C18A2C81DF80008A669A /* 01_1-Tesaloniceni.mp3 */,
+				DDF0C18B2C81DF80008A669A /* 04_1-Tesaloniceni.mp3 */,
+				DDF0C18C2C81DF80008A669A /* 05_1-Tesaloniceni.mp3 */,
+				DDF0C18D2C81DF80008A669A /* 03_1-Tesaloniceni.mp3 */,
+			);
+			path = "13_1-Tesaloniceni";
+			sourceTree = "<group>";
+		};
+		DDF0C18E2C81DF81008A669A /* 09_Galateni */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C18F2C81DF81008A669A /* 03_Galateni.mp3 */,
+				DDF0C1902C81DF81008A669A /* 04_Galateni.mp3 */,
+				DDF0C1912C81DF81008A669A /* 05_Galateni.mp3 */,
+				DDF0C1922C81DF81008A669A /* 02_Galateni.mp3 */,
+				DDF0C1932C81DF81008A669A /* 06_Galateni.mp3 */,
+				DDF0C1942C81DF81008A669A /* 01_Galateni.mp3 */,
+			);
+			path = 09_Galateni;
+			sourceTree = "<group>";
+		};
+		DDF0C1952C81DF83008A669A /* 27_Apocalipsa */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1962C81DF83008A669A /* 07_Apocalipsa.mp3 */,
+				DDF0C1972C81DF83008A669A /* 12_Apocalipsa.mp3 */,
+				DDF0C1982C81DF83008A669A /* 08_Apocalipsa.mp3 */,
+				DDF0C1992C81DF83008A669A /* 15_Apocalipsa.mp3 */,
+				DDF0C19A2C81DF83008A669A /* 01_Apocalipsa.mp3 */,
+				DDF0C19B2C81DF83008A669A /* 14_Apocalipsa.mp3 */,
+				DDF0C19C2C81DF83008A669A /* 09_Apocalipsa.mp3 */,
+				DDF0C19D2C81DF83008A669A /* 13_Apocalipsa.mp3 */,
+				DDF0C19E2C81DF83008A669A /* 06_Apocalipsa.mp3 */,
+				DDF0C19F2C81DF83008A669A /* 11_Apocalipsa.mp3 */,
+				DDF0C1A02C81DF83008A669A /* 04_Apocalipsa.mp3 */,
+				DDF0C1A12C81DF83008A669A /* 19_Apocalipsa.mp3 */,
+				DDF0C1A22C81DF83008A669A /* 03_Apocalipsa.mp3 */,
+				DDF0C1A32C81DF83008A669A /* 16_Apocalipsa.mp3 */,
+				DDF0C1A42C81DF83008A669A /* 17_Apocalipsa.mp3 */,
+				DDF0C1A52C81DF83008A669A /* 02_Apocalipsa.mp3 */,
+				DDF0C1A62C81DF83008A669A /* 18_Apocalipsa.mp3 */,
+				DDF0C1A72C81DF83008A669A /* 05_Apocalipsa.mp3 */,
+				DDF0C1A82C81DF83008A669A /* 10_Apocalipsa.mp3 */,
+				DDF0C1A92C81DF83008A669A /* 22_Apocalipsa.mp3 */,
+				DDF0C1AA2C81DF83008A669A /* 20_Apocalipsa.mp3 */,
+				DDF0C1AB2C81DF83008A669A /* 21_Apocalipsa.mp3 */,
+			);
+			path = 27_Apocalipsa;
+			sourceTree = "<group>";
+		};
+		DDF0C1AC2C81DF8D008A669A /* 26_Iuda */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C2C42C81E026008A669A /* 01_Iuda.nonexistent */,
+			);
+			path = 26_Iuda;
+			sourceTree = "<group>";
+		};
+		DDF0C1AD2C81DF8D008A669A /* 05_Faptele-Apostolilor */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0C1AE2C81DF8D008A669A /* 27_Faptele-Apostolilor.mp3 */,
+				DDF0C1AF2C81DF8D008A669A /* 06_Faptele-Apostolilor.mp3 */,
+				DDF0C1B02C81DF8D008A669A /* 12_Faptele-Apostolilor.mp3 */,
+				DDF0C1B12C81DF8D008A669A /* 19_Faptele-Apostolilor.mp3 */,
+				DDF0C1B22C81DF8D008A669A /* 14_Faptele-Apostolilor.mp3 */,
+				DDF0C1B32C81DF8D008A669A /* 21_Faptele-Apostolilor.mp3 */,
+				DDF0C1B42C81DF8D008A669A /* 26_Faptele-Apostolilor.mp3 */,
+				DDF0C1B52C81DF8D008A669A /* 13_Faptele-Apostolilor.mp3 */,
+				DDF0C1B62C81DF8D008A669A /* 07_Faptele-Apostolilor.mp3 */,
+				DDF0C1B72C81DF8D008A669A /* 18_Faptele-Apostolilor.mp3 */,
+				DDF0C1B82C81DF8D008A669A /* 15_Faptele-Apostolilor.mp3 */,
+				DDF0C1B92C81DF8D008A669A /* 01_Faptele-Apostolilor.mp3 */,
+				DDF0C1BA2C81DF8D008A669A /* 20_Faptele-Apostolilor.mp3 */,
+				DDF0C1BB2C81DF8D008A669A /* 09_Faptele-Apostolilor.mp3 */,
+				DDF0C1BC2C81DF8D008A669A /* 28_Faptele-Apostolilor.mp3 */,
+				DDF0C1BD2C81DF8D008A669A /* 04_Faptele-Apostolilor.mp3 */,
+				DDF0C1BE2C81DF8D008A669A /* 10_Faptele-Apostolilor.mp3 */,
+				DDF0C1BF2C81DF8D008A669A /* 25_Faptele-Apostolilor.mp3 */,
+				DDF0C1C02C81DF8D008A669A /* 23_Faptele-Apostolilor.mp3 */,
+				DDF0C1C12C81DF8D008A669A /* 02_Faptele-Apostolilor.mp3 */,
+				DDF0C1C22C81DF8D008A669A /* 16_Faptele-Apostolilor.mp3 */,
+				DDF0C1C32C81DF8D008A669A /* 08_Faptele-Apostolilor.mp3 */,
+				DDF0C1C42C81DF8D008A669A /* 11_Faptele-Apostolilor.mp3 */,
+				DDF0C1C52C81DF8D008A669A /* 05_Faptele-Apostolilor.mp3 */,
+				DDF0C1C62C81DF8D008A669A /* 24_Faptele-Apostolilor.mp3 */,
+				DDF0C1C72C81DF8D008A669A /* 22_Faptele-Apostolilor.mp3 */,
+				DDF0C1C82C81DF8D008A669A /* 17_Faptele-Apostolilor.mp3 */,
+				DDF0C1C92C81DF8D008A669A /* 03_Faptele-Apostolilor.mp3 */,
+			);
+			path = "05_Faptele-Apostolilor";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,20 +1251,270 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF0C2BB2C81DF8E008A669A /* 16_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2B22C81DF8E008A669A /* 01_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2692C81DF8E008A669A /* 09_Ioan.mp3 in Resources */,
+				DDF0C2052C81DF8D008A669A /* 02_Matei.mp3 in Resources */,
+				DDF0C2A12C81DF8E008A669A /* 18_Apocalipsa.mp3 in Resources */,
+				DDF0C1E22C81DF8D008A669A /* 02_Marcu.mp3 in Resources */,
+				DDF0C2752C81DF8E008A669A /* 03_Filipeni.mp3 in Resources */,
+				DDF0C26F2C81DF8E008A669A /* 13_Ioan.mp3 in Resources */,
 				DD6744BF2C807DB60022971D /* Roboto-ThinItalic.ttf in Resources */,
+				DDF0C2B12C81DF8E008A669A /* 15_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C24C2C81DF8E008A669A /* 04_Luca.mp3 in Resources */,
+				DDF0C2382C81DF8D008A669A /* 03_2-Tesaloniceni.mp3 in Resources */,
+				DDF0C2942C81DF8E008A669A /* 15_Apocalipsa.mp3 in Resources */,
+				DDF0C2BC2C81DF8E008A669A /* 08_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C24F2C81DF8E008A669A /* 22_Luca.mp3 in Resources */,
+				DDF0C25F2C81DF8E008A669A /* 16_Ioan.mp3 in Resources */,
+				DDF0C23E2C81DF8D008A669A /* 01_3-Ioan.mp3 in Resources */,
+				DDF0C20C2C81DF8D008A669A /* 08_Matei.mp3 in Resources */,
+				DDF0C27C2C81DF8E008A669A /* 02_Evrei.mp3 in Resources */,
+				DDF0C2642C81DF8E008A669A /* 11_Ioan.mp3 in Resources */,
+				DDF0C1E92C81DF8D008A669A /* 12_Marcu.mp3 in Resources */,
+				DDF0C2B32C81DF8E008A669A /* 20_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2A42C81DF8E008A669A /* 22_Apocalipsa.mp3 in Resources */,
+				DDF0C29D2C81DF8E008A669A /* 03_Apocalipsa.mp3 in Resources */,
+				DDF0C1CB2C81DF8D008A669A /* 09_1-Corinteni.mp3 in Resources */,
+				DDF0C2652C81DF8E008A669A /* 10_Ioan.mp3 in Resources */,
+				DDF0C20A2C81DF8D008A669A /* 27_Matei.mp3 in Resources */,
+				DDF0C1F62C81DF8D008A669A /* 01_2-Corinteni.mp3 in Resources */,
+				DDF0C1FD2C81DF8D008A669A /* 04_2-Corinteni.mp3 in Resources */,
+				DDF0C2112C81DF8D008A669A /* 03_2-Petru.mp3 in Resources */,
+				DDF0C1DC2C81DF8D008A669A /* 05_Iacov.mp3 in Resources */,
+				DDF0C1F42C81DF8D008A669A /* 09_2-Corinteni.mp3 in Resources */,
+				DDF0C1FF2C81DF8D008A669A /* 03_2-Corinteni.mp3 in Resources */,
+				DDF0C21E2C81DF8D008A669A /* 05_1-Petru.mp3 in Resources */,
+				DDF0C1ED2C81DF8D008A669A /* 15_Marcu.mp3 in Resources */,
+				DDF0C1F72C81DF8D008A669A /* 07_2-Corinteni.mp3 in Resources */,
+				DDF0C2B02C81DF8E008A669A /* 18_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2772C81DF8E008A669A /* 02_Filipeni.mp3 in Resources */,
+				DDF0C1F92C81DF8D008A669A /* 11_2-Corinteni.mp3 in Resources */,
+				DDF0C2862C81DF8E008A669A /* 02_1-Tesaloniceni.mp3 in Resources */,
+				DDF0C2542C81DF8E008A669A /* 06_Luca.mp3 in Resources */,
+				DDF0C2872C81DF8E008A669A /* 01_1-Tesaloniceni.mp3 in Resources */,
+				DDF0C2A92C81DF8E008A669A /* 12_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C27F2C81DF8E008A669A /* 11_Evrei.mp3 in Resources */,
+				DDF0C21C2C81DF8D008A669A /* 01_1-Petru.mp3 in Resources */,
+				DDF0C1CD2C81DF8D008A669A /* 06_1-Corinteni.mp3 in Resources */,
+				DDF0C1F32C81DF8D008A669A /* 06_2-Corinteni.mp3 in Resources */,
+				DDF0C26E2C81DF8E008A669A /* 12_Ioan.mp3 in Resources */,
+				DDF0C26D2C81DF8E008A669A /* 20_Ioan.mp3 in Resources */,
+				DDF0C2302C81DF8D008A669A /* 12_Romani.mp3 in Resources */,
+				DDF0C1DD2C81DF8D008A669A /* 03_Iacov.mp3 in Resources */,
+				DDF0C23D2C81DF8D008A669A /* 01_Tit.mp3 in Resources */,
+				DDF0C2A22C81DF8E008A669A /* 05_Apocalipsa.mp3 in Resources */,
 				DD6744BC2C807DB60022971D /* Roboto-Thin.ttf in Resources */,
 				DD6744B82C807DB60022971D /* Roboto-BoldItalic.ttf in Resources */,
+				DDF0C2162C81DF8D008A669A /* 06_1-Timotei.mp3 in Resources */,
+				DDF0C2912C81DF8E008A669A /* 07_Apocalipsa.mp3 in Resources */,
+				DDF0C1D52C81DF8D008A669A /* 14_1-Corinteni.mp3 in Resources */,
+				DDF0C26B2C81DF8E008A669A /* 14_Ioan.mp3 in Resources */,
+				DDF0C1D32C81DF8D008A669A /* 05_1-Corinteni.mp3 in Resources */,
+				DDF0C2B72C81DF8E008A669A /* 10_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C1CE2C81DF8D008A669A /* 08_1-Corinteni.mp3 in Resources */,
+				DDF0C1E12C81DF8D008A669A /* 10_Marcu.mp3 in Resources */,
+				DDF0C2102C81DF8D008A669A /* 15_Matei.mp3 in Resources */,
+				DDF0C2AD2C81DF8E008A669A /* 26_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2622C81DF8E008A669A /* 06_Ioan.mp3 in Resources */,
+				DDF0C2292C81DF8D008A669A /* 16_Romani.mp3 in Resources */,
+				DDF0C2C02C81DF8E008A669A /* 22_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C28B2C81DF8E008A669A /* 03_Galateni.mp3 in Resources */,
+				DDF0C2722C81DF8E008A669A /* 05_Ioan.mp3 in Resources */,
+				DDF0C1E82C81DF8D008A669A /* 06_Marcu.mp3 in Resources */,
+				DDF0C2A32C81DF8E008A669A /* 10_Apocalipsa.mp3 in Resources */,
+				DDF0C25E2C81DF8E008A669A /* 03_Efeseni.mp3 in Resources */,
+				DDF0C28C2C81DF8E008A669A /* 04_Galateni.mp3 in Resources */,
+				DDF0C2682C81DF8E008A669A /* 08_Ioan.mp3 in Resources */,
+				DDF0C1DA2C81DF8D008A669A /* 04_Iacov.mp3 in Resources */,
+				DDF0C22C2C81DF8D008A669A /* 05_Romani.mp3 in Resources */,
+				DDF0C2A82C81DF8E008A669A /* 06_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2372C81DF8D008A669A /* 15_Romani.mp3 in Resources */,
+				DDF0C2132C81DF8D008A669A /* 02_2-Petru.mp3 in Resources */,
 				DD8963E42C7F510300428C12 /* Preview Assets.xcassets in Resources */,
+				DDF0C2B82C81DF8E008A669A /* 25_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C1D12C81DF8D008A669A /* 16_1-Corinteni.mp3 in Resources */,
+				DDF0C2422C81DF8E008A669A /* 09_Luca.mp3 in Resources */,
+				DDF0C2B52C81DF8E008A669A /* 28_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C23F2C81DF8E008A669A /* 01_2-Ioan.mp3 in Resources */,
+				DDF0C2092C81DF8D008A669A /* 10_Matei.mp3 in Resources */,
+				DDF0C1F22C81DF8D008A669A /* 02_2-Timotei.mp3 in Resources */,
 				DD6744BB2C807DB60022971D /* Roboto-LightItalic.ttf in Resources */,
+				DDF0C1E32C81DF8D008A669A /* 16_Marcu.mp3 in Resources */,
+				DDF0C2242C81DF8D008A669A /* 03_Coloseni.mp3 in Resources */,
+				DDF0C27D2C81DF8E008A669A /* 08_Evrei.mp3 in Resources */,
+				DDF0C2632C81DF8E008A669A /* 07_Ioan.mp3 in Resources */,
+				DDF0C2712C81DF8E008A669A /* 19_Ioan.mp3 in Resources */,
+				DDF0C2022C81DF8D008A669A /* 06_Matei.mp3 in Resources */,
+				DDF0C26A2C81DF8E008A669A /* 15_Ioan.mp3 in Resources */,
+				DDF0C1E52C81DF8D008A669A /* 11_Marcu.mp3 in Resources */,
+				DDF0C2992C81DF8E008A669A /* 06_Apocalipsa.mp3 in Resources */,
+				DDF0C2352C81DF8D008A669A /* 04_Romani.mp3 in Resources */,
+				DDF0C2182C81DF8D008A669A /* 05_1-Timotei.mp3 in Resources */,
+				DDF0C2AA2C81DF8E008A669A /* 19_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2892C81DF8E008A669A /* 05_1-Tesaloniceni.mp3 in Resources */,
+				DDF0C2472C81DF8E008A669A /* 21_Luca.mp3 in Resources */,
+				DDF0C2502C81DF8E008A669A /* 17_Luca.mp3 in Resources */,
+				DDF0C2822C81DF8E008A669A /* 06_Evrei.mp3 in Resources */,
+				DDF0C2C12C81DF8E008A669A /* 17_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C20D2C81DF8D008A669A /* 25_Matei.mp3 in Resources */,
+				DDF0C2592C81DF8E008A669A /* 04_Efeseni.mp3 in Resources */,
+				DDF0C24B2C81DF8E008A669A /* 18_Luca.mp3 in Resources */,
+				DDF0C2142C81DF8D008A669A /* 04_1-Timotei.mp3 in Resources */,
+				DDF0C2252C81DF8D008A669A /* 04_Coloseni.mp3 in Resources */,
+				DDF0C2452C81DF8E008A669A /* 15_Luca.mp3 in Resources */,
+				DDF0C1EA2C81DF8D008A669A /* 14_Marcu.mp3 in Resources */,
+				DDF0C2BA2C81DF8E008A669A /* 02_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C1E42C81DF8D008A669A /* 08_Marcu.mp3 in Resources */,
+				DDF0C28F2C81DF8E008A669A /* 06_Galateni.mp3 in Resources */,
+				DDF0C2B42C81DF8E008A669A /* 09_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C1D82C81DF8D008A669A /* 12_1-Corinteni.mp3 in Resources */,
+				DDF0C2412C81DF8E008A669A /* 02_Luca.mp3 in Resources */,
+				DDF0C2072C81DF8D008A669A /* 28_Matei.mp3 in Resources */,
+				DDF0C2172C81DF8D008A669A /* 02_1-Timotei.mp3 in Resources */,
+				DDF0C21A2C81DF8D008A669A /* 02_1-Petru.mp3 in Resources */,
+				DDF0C1FE2C81DF8D008A669A /* 12_2-Corinteni.mp3 in Resources */,
+				DDF0C1FB2C81DF8D008A669A /* 05_2-Corinteni.mp3 in Resources */,
+				DDF0C2C22C81DF8E008A669A /* 03_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C26C2C81DF8E008A669A /* 21_Ioan.mp3 in Resources */,
+				DDF0C24D2C81DF8E008A669A /* 05_Luca.mp3 in Resources */,
+				DDF0C23B2C81DF8D008A669A /* 03_Tit.mp3 in Resources */,
+				DDF0C21D2C81DF8D008A669A /* 03_1-Petru.mp3 in Resources */,
+				DDF0C25C2C81DF8E008A669A /* 05_Efeseni.mp3 in Resources */,
+				DDF0C2812C81DF8E008A669A /* 12_Evrei.mp3 in Resources */,
+				DDF0C2332C81DF8D008A669A /* 10_Romani.mp3 in Resources */,
+				DDF0C2262C81DF8D008A669A /* 02_Coloseni.mp3 in Resources */,
+				DDF0C1FC2C81DF8D008A669A /* 13_2-Corinteni.mp3 in Resources */,
+				DDF0C29B2C81DF8E008A669A /* 04_Apocalipsa.mp3 in Resources */,
+				DDF0C2082C81DF8D008A669A /* 01_Matei.mp3 in Resources */,
+				DDF0C28D2C81DF8E008A669A /* 05_Galateni.mp3 in Resources */,
+				DDF0C24A2C81DF8E008A669A /* 19_Luca.mp3 in Resources */,
+				DDF0C1D62C81DF8D008A669A /* 03_1-Corinteni.mp3 in Resources */,
 				DD6744BA2C807DB60022971D /* Roboto-Bold.ttf in Resources */,
+				DDF0C1D42C81DF8D008A669A /* 02_1-Corinteni.mp3 in Resources */,
+				DDF0C2AC2C81DF8E008A669A /* 21_Faptele-Apostolilor.mp3 in Resources */,
 				DD6744C02C807DB60022971D /* Roboto-BlackItalic.ttf in Resources */,
+				DDF0C2562C81DF8E008A669A /* 24_Luca.mp3 in Resources */,
+				DDF0C2BE2C81DF8E008A669A /* 05_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2232C81DF8D008A669A /* 03_1-Ioan.mp3 in Resources */,
 				DD8963E12C7F510300428C12 /* Assets.xcassets in Resources */,
+				DDF0C2522C81DF8E008A669A /* 01_Luca.mp3 in Resources */,
 				DD6744C12C807DB60022971D /* Roboto-Medium.ttf in Resources */,
 				DD6744BD2C807DB60022971D /* Roboto-Light.ttf in Resources */,
+				DDF0C20B2C81DF8D008A669A /* 13_Matei.mp3 in Resources */,
+				DDF0C2392C81DF8D008A669A /* 02_2-Tesaloniceni.mp3 in Resources */,
+				DDF0C2742C81DF8E008A669A /* 01_Filimon.mp3 in Resources */,
+				DDF0C2312C81DF8D008A669A /* 03_Romani.mp3 in Resources */,
 				DD6744C22C807DB60022971D /* Roboto-Regular.ttf in Resources */,
+				DDF0C2342C81DF8D008A669A /* 01_Romani.mp3 in Resources */,
+				DDF0C1CF2C81DF8D008A669A /* 11_1-Corinteni.mp3 in Resources */,
+				DDF0C2282C81DF8D008A669A /* 07_Romani.mp3 in Resources */,
+				DDF0C21B2C81DF8D008A669A /* 04_1-Petru.mp3 in Resources */,
+				DDF0C1EE2C81DF8D008A669A /* 01_Marcu.mp3 in Resources */,
+				DDF0C1CA2C81DF8D008A669A /* 01_1-Corinteni.mp3 in Resources */,
+				DDF0C2042C81DF8D008A669A /* 23_Matei.mp3 in Resources */,
+				DDF0C1DE2C81DF8D008A669A /* 01_Iacov.mp3 in Resources */,
+				DDF0C27E2C81DF8E008A669A /* 05_Evrei.mp3 in Resources */,
+				DDF0C1CC2C81DF8D008A669A /* 10_1-Corinteni.mp3 in Resources */,
+				DDF0C2122C81DF8D008A669A /* 01_2-Petru.mp3 in Resources */,
+				DDF0C1D72C81DF8D008A669A /* 15_1-Corinteni.mp3 in Resources */,
+				DDF0C29F2C81DF8E008A669A /* 17_Apocalipsa.mp3 in Resources */,
+				DDF0C27A2C81DF8E008A669A /* 10_Evrei.mp3 in Resources */,
+				DDF0C2432C81DF8E008A669A /* 08_Luca.mp3 in Resources */,
+				DDF0C2842C81DF8E008A669A /* 13_Evrei.mp3 in Resources */,
+				DDF0C21F2C81DF8D008A669A /* 05_1-Ioan.mp3 in Resources */,
+				DDF0C2962C81DF8E008A669A /* 14_Apocalipsa.mp3 in Resources */,
 				DD6744C32C807DB60022971D /* Roboto-Italic.ttf in Resources */,
+				DDF0C2702C81DF8E008A669A /* 18_Ioan.mp3 in Resources */,
+				DDF0C25B2C81DF8E008A669A /* 02_Efeseni.mp3 in Resources */,
+				DDF0C2AE2C81DF8E008A669A /* 13_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C28E2C81DF8E008A669A /* 02_Galateni.mp3 in Resources */,
+				DDF0C20F2C81DF8D008A669A /* 22_Matei.mp3 in Resources */,
+				DDF0C1EB2C81DF8D008A669A /* 13_Marcu.mp3 in Resources */,
+				DDF0C2A52C81DF8E008A669A /* 20_Apocalipsa.mp3 in Resources */,
+				DDF0C22A2C81DF8D008A669A /* 13_Romani.mp3 in Resources */,
+				DDF0C1E62C81DF8D008A669A /* 05_Marcu.mp3 in Resources */,
+				DDF0C2612C81DF8E008A669A /* 01_Ioan.mp3 in Resources */,
+				DDF0C27B2C81DF8E008A669A /* 04_Evrei.mp3 in Resources */,
+				DDF0C2012C81DF8D008A669A /* 03_Matei .mp3 in Resources */,
 				DD6744BE2C807DB60022971D /* Roboto-MediumItalic.ttf in Resources */,
+				DDF0C2662C81DF8E008A669A /* 02_Ioan.mp3 in Resources */,
+				DDF0C2852C81DF8E008A669A /* 01_Evrei.mp3 in Resources */,
+				DDF0C1F12C81DF8D008A669A /* 01_2-Timotei.mp3 in Resources */,
+				DDF0C29A2C81DF8E008A669A /* 11_Apocalipsa.mp3 in Resources */,
+				DDF0C2572C81DF8E008A669A /* 10_Luca.mp3 in Resources */,
+				DDF0C2782C81DF8E008A669A /* 01_Filipeni.mp3 in Resources */,
+				DDF0C2B92C81DF8E008A669A /* 23_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2672C81DF8E008A669A /* 03_Ioan.mp3 in Resources */,
+				DDF0C25A2C81DF8E008A669A /* 01_Efeseni.mp3 in Resources */,
+				DDF0C20E2C81DF8D008A669A /* 19_Matei.mp3 in Resources */,
+				DDF0C2272C81DF8D008A669A /* 01_Coloseni.mp3 in Resources */,
+				DDF0C2482C81DF8E008A669A /* 13_Luca.mp3 in Resources */,
+				DDF0C2402C81DF8E008A669A /* 03_Luca.mp3 in Resources */,
+				DDF0C2972C81DF8E008A669A /* 09_Apocalipsa.mp3 in Resources */,
+				DDF0C2002C81DF8D008A669A /* 21_Matei.mp3 in Resources */,
+				DDF0C1F02C81DF8D008A669A /* 04_2-Timotei.mp3 in Resources */,
+				DDF0C2C52C81E026008A669A /* 01_Iuda.nonexistent in Resources */,
+				DDF0C1D92C81DF8D008A669A /* 04_1-Corinteni.mp3 in Resources */,
+				DDF0C1EC2C81DF8D008A669A /* 07_Marcu.mp3 in Resources */,
+				DDF0C2222C81DF8D008A669A /* 04_1-Ioan.mp3 in Resources */,
+				DDF0C2932C81DF8E008A669A /* 08_Apocalipsa.mp3 in Resources */,
+				DDF0C2902C81DF8E008A669A /* 01_Galateni.mp3 in Resources */,
+				DDF0C2202C81DF8D008A669A /* 02_1-Ioan.mp3 in Resources */,
+				DDF0C2AB2C81DF8E008A669A /* 14_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2B62C81DF8E008A669A /* 04_Faptele-Apostolilor.mp3 in Resources */,
 				DD6744B92C807DB60022971D /* Roboto-Black.ttf in Resources */,
+				DDF0C2A02C81DF8E008A669A /* 02_Apocalipsa.mp3 in Resources */,
+				DDF0C25D2C81DF8E008A669A /* 06_Efeseni.mp3 in Resources */,
+				DDF0C28A2C81DF8E008A669A /* 03_1-Tesaloniceni.mp3 in Resources */,
+				DDF0C1F52C81DF8D008A669A /* 10_2-Corinteni.mp3 in Resources */,
+				DDF0C2362C81DF8D008A669A /* 09_Romani.mp3 in Resources */,
+				DDF0C2BD2C81DF8E008A669A /* 11_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2AF2C81DF8E008A669A /* 07_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2442C81DF8E008A669A /* 14_Luca.mp3 in Resources */,
+				DDF0C2A72C81DF8E008A669A /* 27_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C2802C81DF8E008A669A /* 03_Evrei.mp3 in Resources */,
+				DDF0C2BF2C81DF8E008A669A /* 24_Faptele-Apostolilor.mp3 in Resources */,
+				DDF0C1DB2C81DF8D008A669A /* 02_Iacov.mp3 in Resources */,
+				DDF0C22B2C81DF8D008A669A /* 02_Romani.mp3 in Resources */,
+				DDF0C1D22C81DF8D008A669A /* 13_1-Corinteni.mp3 in Resources */,
+				DDF0C2882C81DF8E008A669A /* 04_1-Tesaloniceni.mp3 in Resources */,
+				DDF0C1E72C81DF8D008A669A /* 03_Marcu.mp3 in Resources */,
+				DDF0C2832C81DF8E008A669A /* 07_Evrei.mp3 in Resources */,
+				DDF0C23A2C81DF8D008A669A /* 01_2-Tesaloniceni.mp3 in Resources */,
+				DDF0C2152C81DF8D008A669A /* 03_1-Timotei.mp3 in Resources */,
+				DDF0C2532C81DF8E008A669A /* 07_Luca.mp3 in Resources */,
+				DDF0C2582C81DF8E008A669A /* 11_Luca.mp3 in Resources */,
+				DDF0C2952C81DF8E008A669A /* 01_Apocalipsa.mp3 in Resources */,
+				DDF0C2762C81DF8E008A669A /* 04_Filipeni.mp3 in Resources */,
+				DDF0C24E2C81DF8E008A669A /* 23_Luca.mp3 in Resources */,
+				DDF0C2922C81DF8E008A669A /* 12_Apocalipsa.mp3 in Resources */,
+				DDF0C23C2C81DF8D008A669A /* 02_Tit.mp3 in Resources */,
+				DDF0C29E2C81DF8E008A669A /* 16_Apocalipsa.mp3 in Resources */,
+				DDF0C2792C81DF8E008A669A /* 09_Evrei.mp3 in Resources */,
+				DDF0C2192C81DF8D008A669A /* 01_1-Timotei.mp3 in Resources */,
+				DDF0C22D2C81DF8D008A669A /* 08_Romani.mp3 in Resources */,
+				DDF0C29C2C81DF8E008A669A /* 19_Apocalipsa.mp3 in Resources */,
+				DDF0C1E02C81DF8D008A669A /* 04_Marcu.mp3 in Resources */,
+				DDF0C2212C81DF8D008A669A /* 01_1-Ioan.mp3 in Resources */,
+				DDF0C2A62C81DF8E008A669A /* 21_Apocalipsa.mp3 in Resources */,
+				DDF0C2322C81DF8D008A669A /* 06_Romani.mp3 in Resources */,
+				DDF0C1DF2C81DF8D008A669A /* 09_Marcu.mp3 in Resources */,
+				DDF0C22E2C81DF8D008A669A /* 14_Romani.mp3 in Resources */,
+				DDF0C2982C81DF8E008A669A /* 13_Apocalipsa.mp3 in Resources */,
+				DDF0C2732C81DF8E008A669A /* 04_Ioan.mp3 in Resources */,
+				DDF0C1F82C81DF8D008A669A /* 08_2-Corinteni.mp3 in Resources */,
+				DDF0C1FA2C81DF8D008A669A /* 02_2-Corinteni.mp3 in Resources */,
+				DDF0C2552C81DF8E008A669A /* Contract avocat.pdf in Resources */,
+				DDF0C1EF2C81DF8D008A669A /* 03_2-Timotei.mp3 in Resources */,
+				DDF0C2602C81DF8E008A669A /* 17_Ioan.mp3 in Resources */,
+				DDF0C2032C81DF8D008A669A /* 04_Matei.mp3 in Resources */,
+				DDF0C1D02C81DF8D008A669A /* 07_1-Corinteni.mp3 in Resources */,
+				DDF0C2492C81DF8E008A669A /* 12_Luca.mp3 in Resources */,
+				DDF0C22F2C81DF8D008A669A /* 11_Romani.mp3 in Resources */,
+				DDF0C2462C81DF8E008A669A /* 20_Luca.mp3 in Resources */,
+				DDF0C2512C81DF8E008A669A /* 16_Luca.mp3 in Resources */,
+				DDF0C2062C81DF8D008A669A /* 17_Matei.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
