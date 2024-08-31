@@ -20,7 +20,7 @@ class Book {
     
     func getAudioName(chapter: Int) -> String {
         if (1...self.chapters).contains(chapter) {
-            return "\(String(format: "%02d", chapter))_\(self.name.replacingOccurrences(of: " ", with: "-")))"
+            return "\(String(format: "%02d", chapter))_\(self.name.replacingOccurrences(of: " ", with: "-"))"
         }
         else {
             return ""

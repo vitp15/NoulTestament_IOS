@@ -28,6 +28,7 @@
 		DD6744C62C8085D20022971D /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6744C52C8085D20022971D /* CustomFonts.swift */; };
 		DD6B09DF2C7F70B40077A0F9 /* CustomImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B09DE2C7F70B40077A0F9 /* CustomImages.swift */; };
 		DD6B09E42C7F78D80077A0F9 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6B09E32C7F78D80077A0F9 /* CustomColor.swift */; };
+		DD6D588B2C83A0D800169BB5 /* AudioUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D588A2C83A0D800169BB5 /* AudioUtils.swift */; };
 		DD8963DD2C7F510200428C12 /* NoulTestamentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8963DC2C7F510200428C12 /* NoulTestamentApp.swift */; };
 		DD8963DF2C7F510200428C12 /* BookSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8963DE2C7F510200428C12 /* BookSelectView.swift */; };
 		DD8963E12C7F510300428C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8963E02C7F510300428C12 /* Assets.xcassets */; };
@@ -306,6 +307,7 @@
 		DD6744C52C8085D20022971D /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		DD6B09DE2C7F70B40077A0F9 /* CustomImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImages.swift; sourceTree = "<group>"; };
 		DD6B09E32C7F78D80077A0F9 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		DD6D588A2C83A0D800169BB5 /* AudioUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtils.swift; sourceTree = "<group>"; };
 		DD8963D92C7F510200428C12 /* NoulTestament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoulTestament.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8963DC2C7F510200428C12 /* NoulTestamentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoulTestamentApp.swift; sourceTree = "<group>"; };
 		DD8963DE2C7F510200428C12 /* BookSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSelectView.swift; sourceTree = "<group>"; };
@@ -579,6 +581,7 @@
 			isa = PBXGroup;
 			children = (
 				DD650E492C80A6B2000103E9 /* Book.swift */,
+				DD6D588A2C83A0D800169BB5 /* AudioUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1527,6 +1530,7 @@
 			files = (
 				DD8963DF2C7F510200428C12 /* BookSelectView.swift in Sources */,
 				DD6744A32C8074E70022971D /* BookItemView.swift in Sources */,
+				DD6D588B2C83A0D800169BB5 /* AudioUtils.swift in Sources */,
 				DD67449E2C8074310022971D /* AudioView.swift in Sources */,
 				DD6744C62C8085D20022971D /* CustomFonts.swift in Sources */,
 				DD6744A82C8077840022971D /* CustomIcons.swift in Sources */,
