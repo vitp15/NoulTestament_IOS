@@ -29,7 +29,9 @@ struct ChapterSelectView: View {
         .background(ZStack {
             Image(.chapter_walpaper)
                 .resizable()
-                .scaledToFill()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                .aspectRatio(contentMode: .fill)
+                .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/, anchor: .bottomTrailing)
                 .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
             
             Color(.above_walpapers)

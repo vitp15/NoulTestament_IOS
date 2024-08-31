@@ -9,9 +9,10 @@ import SwiftUI
 
 struct AudioView: View {
     @Environment(\.presentationMode) var presentationMode
+    @State private var width : CGFloat = 0
+    
     let book: Book
     let currChapter: Int
-    @State var width : CGFloat = 0
     
     var body: some View {
         VStack {
@@ -61,20 +62,20 @@ struct AudioView: View {
             .padding(.bottom, 32)
             
             VStack {
-                ZStack(alignment: .leading) {
-                    Capsule().fill(Color(.tertiaryFixedDim)).frame(height: 7)
-                    Capsule().fill(Color(.tertiary)).frame(width: self.width, height: 7)
+                GeometryReader { geomtry in
+                    ZStack(alignment: .leading) {
+                        Capsule().fill(Color(.tertiaryFixedDim))
+                        Capsule().fill(Color(.tertiary)).frame(width: self.width)
+                    }
+                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                                .onChanged({ (value) in
+                                    self.width = value.location.x
+                                }).onEnded({ (value) in
+                                    let percent = value.location.x / geomtry.size.width
+                                    //                            self.player.currentTime = Double(percent) * self.player.duration
+                                }))
                 }
-                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                            .onChanged({ (value) in
-                                let x = value.location.x
-                                self.width = value.location.x
-                            }).onEnded({ (value) in
-                                let x = value.location.x
-                                let screen = UIScreen.main.bounds.width - 32
-                                let percent = x / screen
-                                //                            self.player.currentTime = Double(percent) * self.player.duration
-                            }))
+                .frame(height: 7)
                 
                 HStack {
                     Text("1:23")
@@ -94,7 +95,9 @@ struct AudioView: View {
         .background(ZStack {
             Image(.audio_walpaper)
                 .resizable()
-                .scaledToFill()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                .aspectRatio(contentMode: .fill)
+                .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/, anchor: .bottomLeading)
                 .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
             
             Color(.above_walpapers)
