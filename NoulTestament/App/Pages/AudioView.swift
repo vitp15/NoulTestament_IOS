@@ -174,6 +174,7 @@ struct AudioView: View {
             .padding(.horizontal, 16)
             .padding(.bottom, 20)
         }
+        .frame(maxWidth: 700)
         .background(ZStack {
             Image(.audio_walpaper)
                 .resizable()

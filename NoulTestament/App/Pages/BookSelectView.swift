@@ -71,9 +71,10 @@ struct BookSelectView: View {
                     })
                 .navigationTitle("Noul Testament")
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationViewStyle(StackNavigationViewStyle())
             }
+            .frame(maxWidth: 700)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear(perform: {
             handleNotifications()
             if let lastClosed = UserDefaults.standard.string(forKey: "ForceClosed") {
