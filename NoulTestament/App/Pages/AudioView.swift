@@ -83,13 +83,19 @@ struct AudioView: View {
                 }
                 Spacer()
                 Button(action: {
-                    if isPlaying {
-                        pause()
-                    } else {
-                        play()
+                    if let player = self.player {
+                        if player.isPlaying {
+                            pause()
+                        } else {
+                            play()
+                        }
                     }
                 }) {
-                    Image(isPlaying ? .pause : .play)
+                    if let player = self.player {
+                        Image(player.isPlaying ? .pause : .play)
+                    } else {
+                        Image(.play)
+                    }
                 }
                 Spacer()
                 Button(action: {
@@ -160,6 +166,9 @@ struct AudioView: View {
         .onAppear(perform: {
             aviableAudio = setupAudio()
             play()
+        })
+        .onDisappear(perform: {
+            pause()
         })
         .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
             updateProgress()
