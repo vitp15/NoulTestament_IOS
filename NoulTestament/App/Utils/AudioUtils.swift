@@ -9,6 +9,11 @@ import SwiftUI
 import AVKit
 
 extension AudioView {
+    func back() {
+        backClicked = true
+        presentationMode.wrappedValue.dismiss()
+    }
+    
     func setupAudio() -> Bool {
         if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
             currentTime = UserDefaults.standard.double(forKey: book.getAudioName(chapter: currChapter))

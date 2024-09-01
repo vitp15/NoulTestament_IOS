@@ -20,6 +20,7 @@ struct AudioView: View {
     @State var currentTime: TimeInterval = 0.0
     @State var totalTime: TimeInterval = 0.0
     @State var delegate: AVdelegate = AVdelegate()
+    @State var backClicked: Bool = false
     
     @State var book: Book
     @State var currChapter: Int
@@ -37,7 +38,7 @@ struct AudioView: View {
             // Back button
             HStack {
                 Button(action: {
-                    presentationMode.wrappedValue.dismiss()
+                    back()
                 }) {
                     Image(.arrow_back)
                 }
@@ -169,11 +170,12 @@ struct AudioView: View {
             DragGesture()
                 .onChanged { value in
                     if value.translation.width > 70 {
-                        presentationMode.wrappedValue.dismiss()
+                        back()
                     }
                 }
         )
         .onAppear(perform: {
+            backClicked = false
             aviableAudio = setupAudio()
             if aviableAudio && !onPause {
                 play()
@@ -194,18 +196,24 @@ struct AudioView: View {
         }
         .navigationBarHidden(true)
         .onChange(of: scenePhase) { phase in
-            switch phase {
-            case .background, .inactive:
-                UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
-            case .active:
-                if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
-                    UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
-                }
-            @unknown default:
-                // Handle future cases
-                print("Unknown scene phase")
-            }
-        }
+                        switch phase {
+                        case .background, .inactive:
+                            UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
+                            if !backClicked {
+                                UserDefaults.standard.set("\(currChapter) \(book.order)", forKey: "ForceClosed")
+                            }
+                        case .active:
+                            if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
+                                UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
+                            }
+                            if UserDefaults.standard.object(forKey: "ForceClosed") != nil {
+                                UserDefaults.standard.removeObject(forKey: "ForceClosed")
+                            }
+                        @unknown default:
+                            // Handle future cases
+                            print("Unknown scene phase")
+                        }
+                    }
     }
 }
 

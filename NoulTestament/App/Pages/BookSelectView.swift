@@ -10,6 +10,10 @@ import SwiftUI
 struct BookSelectView: View {
     let books: [Book]
     
+    @State var goToLastAudio: Bool = false
+    @State var lastOrder: Int = 1
+    @State var lastChapter: Int = 1
+    
     init() {
         books = getAllBooks()
         // Customize the navigation bar appearance
@@ -32,36 +36,56 @@ struct BookSelectView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(books, id: \.order) { book in
-                    ZStack {
-                        NavigationLink(
-                            destination: ChapterSelectView(book: book)
-                                .navigationBarBackButtonHidden(true),
-                            label: {}).hidden()
-                        BookItemView(name: book.name)
+            ZStack {
+                NavigationLink(
+                    destination: AudioView(book: books[lastOrder - 1], currChapter: lastChapter, onPause: true),
+                    isActive: $goToLastAudio,
+                    label: { EmptyView() }
+                )
+                List {
+                    ForEach(books, id: \.order) { book in
+                        ZStack {
+                            NavigationLink(
+                                destination: ChapterSelectView(book: book)
+                                    .navigationBarBackButtonHidden(true),
+                                label: {}).hidden()
+                            BookItemView(name: book.name)
+                        }
+                        .listRowBackground(Color.clear)
                     }
-                    .listRowBackground(Color.clear)
+                    .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 }
-                .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                .listStyle(PlainListStyle())
+                .background(
+                    ZStack {
+                        Image(.books_walpaper)
+                            .resizable()
+                            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                            .aspectRatio(contentMode: .fill)
+                            .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/, anchor: .bottomTrailing)
+                            .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
+                        
+                        Color(.above_walpapers)
+                            .edgesIgnoringSafeArea(.all)
+                    })
+                .navigationTitle("Noul Testament")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationViewStyle(StackNavigationViewStyle())
             }
-            .listStyle(PlainListStyle())
-            .background(
-                ZStack {
-                    Image(.books_walpaper)
-                        .resizable()
-                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                        .aspectRatio(contentMode: .fill)
-                        .scaleEffect(/*@START_MENU_TOKEN@*/1.0/*@END_MENU_TOKEN@*/, anchor: .bottomTrailing)
-                        .edgesIgnoringSafeArea([.leading, .trailing, .bottom])
-                    
-                    Color(.above_walpapers)
-                        .edgesIgnoringSafeArea(.all)
-                })
-            .navigationTitle("Noul Testament")
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationViewStyle(StackNavigationViewStyle())
         }
+        .onAppear(perform: {
+            if let lastClosed = UserDefaults.standard.string(forKey: "ForceClosed") {
+                UserDefaults.standard.removeObject(forKey: "ForceClosed")
+                let components = lastClosed.split(separator: " ")
+                if components.count == 2 {
+                    lastChapter = Int(components[0]) ?? 1
+                    lastOrder = Int(components[1]) ?? 1
+                    goToLastAudio = true
+                }
+            } else {
+                goToLastAudio = false
+            }
+        })
     }
 }
 
