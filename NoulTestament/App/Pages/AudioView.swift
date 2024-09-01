@@ -47,25 +47,44 @@ struct AudioView: View {
             .padding(EdgeInsets(top: 25, leading: 16, bottom: 0, trailing: 0))
             Spacer()
             
-            // Book name and chapter
-            VStack {
-                Text(aviableAudio ? book.name : "Acest capitol nu e disponibil")
-                    .font(.roboto, size: 40)
-                    .fontWeight(.medium)
-                    .minimumScaleFactor(0.75)
-                    .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color(.onSurface))
+            ZStack {
+                // Background with double tap
+                HStack {
+                    Rectangle()
+                        .foregroundColor(Color.clear)
+                        .contentShape(Rectangle())
+                        .onTapGesture(count: 2, perform: {
+                            replay(time: 5)
+                        })
+                    
+                    Rectangle()
+                        .foregroundColor(Color.clear)
+                        .contentShape(Rectangle())
+                        .onTapGesture(count: 2, perform: {
+                            forward(time: 5)
+                        })
+                }
                 
-                Text(aviableAudio ? String(currChapter) : "")
-                    .font(.roboto, size: 64)
-                    .fontWeight(.medium)
-                    .minimumScaleFactor(0.75)
-                    .lineLimit(1)
-                    .foregroundColor(Color(.onSurface))
-                    .padding(.top, 10)
+                // Book name and chapter
+                VStack {
+                    Text(aviableAudio ? book.name : "Acest capitol nu e disponibil")
+                        .font(.roboto, size: 40)
+                        .fontWeight(.medium)
+                        .minimumScaleFactor(0.75)
+                        .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(.onSurface))
+                    
+                    Text(aviableAudio ? String(currChapter) : "")
+                        .font(.roboto, size: 64)
+                        .fontWeight(.medium)
+                        .minimumScaleFactor(0.75)
+                        .lineLimit(1)
+                        .foregroundColor(Color(.onSurface))
+                        .padding(.top, 10)
+                }
+                .padding(.horizontal, 16)
             }
-            .padding(.horizontal, 16)
             Spacer()
             
             // Skip second buttons
@@ -196,24 +215,24 @@ struct AudioView: View {
         }
         .navigationBarHidden(true)
         .onChange(of: scenePhase) { phase in
-                        switch phase {
-                        case .background, .inactive:
-                            UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
-                            if !backClicked {
-                                UserDefaults.standard.set("\(currChapter) \(book.order)", forKey: "ForceClosed")
-                            }
-                        case .active:
-                            if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
-                                UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
-                            }
-                            if UserDefaults.standard.object(forKey: "ForceClosed") != nil {
-                                UserDefaults.standard.removeObject(forKey: "ForceClosed")
-                            }
-                        @unknown default:
-                            // Handle future cases
-                            print("Unknown scene phase")
-                        }
-                    }
+            switch phase {
+            case .background, .inactive:
+                UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
+                if !backClicked {
+                    UserDefaults.standard.set("\(currChapter) \(book.order)", forKey: "ForceClosed")
+                }
+            case .active:
+                if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
+                    UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
+                }
+                if UserDefaults.standard.object(forKey: "ForceClosed") != nil {
+                    UserDefaults.standard.removeObject(forKey: "ForceClosed")
+                }
+            @unknown default:
+                // Handle future cases
+                print("Unknown scene phase")
+            }
+        }
     }
 }
 

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct BookSelectView: View {
     let books: [Book]
@@ -74,6 +75,7 @@ struct BookSelectView: View {
             }
         }
         .onAppear(perform: {
+            handleNotifications()
             if let lastClosed = UserDefaults.standard.string(forKey: "ForceClosed") {
                 UserDefaults.standard.removeObject(forKey: "ForceClosed")
                 let components = lastClosed.split(separator: " ")
