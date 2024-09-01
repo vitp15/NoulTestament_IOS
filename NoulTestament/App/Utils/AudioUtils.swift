@@ -10,6 +10,12 @@ import AVKit
 
 extension AudioView {
     func setupAudio() -> Bool {
+        if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
+            currentTime = UserDefaults.standard.double(forKey: book.getAudioName(chapter: currChapter))
+            UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
+        } else {
+            currentTime = 0.0
+        }
         guard let url = Bundle.main.url(forResource: book.getAudioName(chapter: currChapter), withExtension: "mp3")
         else {
             print("Error getting audio url")
@@ -20,6 +26,7 @@ extension AudioView {
             player?.delegate = delegate
             totalTime = player?.duration ?? 0.0
             player?.prepareToPlay()
+            seekAudio(to: currentTime)
         } catch {
             print("Error loading audio: \(error)")
         }

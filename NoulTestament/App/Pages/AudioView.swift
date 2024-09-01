@@ -10,6 +10,7 @@ import AVKit
 
 struct AudioView: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.scenePhase) private var scenePhase
     @State var width : CGFloat = 0
     @State var maxWidth : CGFloat = 0
     @State var player: AVAudioPlayer?
@@ -23,9 +24,12 @@ struct AudioView: View {
     @State var book: Book
     @State var currChapter: Int
     
-    init(book: Book, currChapter: Int) {
+    let  onPause: Bool
+    
+    init(book: Book, currChapter: Int, onPause: Bool) {
         _book = State(initialValue: book)
         _currChapter = State(initialValue: currChapter)
+        self.onPause = onPause
     }
     
     var body: some View {
@@ -171,7 +175,7 @@ struct AudioView: View {
         )
         .onAppear(perform: {
             aviableAudio = setupAudio()
-            if aviableAudio {
+            if aviableAudio && !onPause {
                 play()
             }
             NotificationCenter.default.addObserver(forName: NSNotification.Name("audioFinished"),
@@ -182,17 +186,31 @@ struct AudioView: View {
         .onDisappear(perform: {
             player?.stop()
             player = nil
+            UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
         })
         .onReceive(
             Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
             updateProgress()
         }
         .navigationBarHidden(true)
+        .onChange(of: scenePhase) { phase in
+            switch phase {
+            case .background, .inactive:
+                UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
+            case .active:
+                if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
+                    UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
+                }
+            @unknown default:
+                // Handle future cases
+                print("Unknown scene phase")
+            }
+        }
     }
 }
 
 struct AudioView_Previews: PreviewProvider {
     static var previews: some View {
-        AudioView(book: Book(order: 1, name: "Matei", chapters: 28), currChapter: 3)
+        AudioView(book: Book(order: 1, name: "Matei", chapters: 28), currChapter: 3, onPause: false)
     }
 }
