@@ -15,12 +15,18 @@ struct AudioView: View {
     @State var player: AVAudioPlayer?
     @State var isPlaying: Bool = false
     @State var isDragged: Bool = false
-    @State private var aviableAudio: Bool = false
+    @State var aviableAudio: Bool = false
     @State var currentTime: TimeInterval = 0.0
     @State var totalTime: TimeInterval = 0.0
+    @State var delegate: AVdelegate = AVdelegate()
     
-    let book: Book
-    let currChapter: Int
+    @State var book: Book
+    @State var currChapter: Int
+    
+    init(book: Book, currChapter: Int) {
+        _book = State(initialValue: book)
+        _currChapter = State(initialValue: currChapter)
+    }
     
     var body: some View {
         VStack {
@@ -77,7 +83,7 @@ struct AudioView: View {
             // Buttons play, pause, previous and next
             HStack(alignment: .bottom, spacing: 0, content: {
                 Button(action: {
-                    
+                    previous()
                 }) {
                     Image(.previous)
                 }
@@ -99,7 +105,7 @@ struct AudioView: View {
                 }
                 Spacer()
                 Button(action: {
-                    
+                    next()
                 }) {
                     Image(.next)
                 }
@@ -165,12 +171,20 @@ struct AudioView: View {
         )
         .onAppear(perform: {
             aviableAudio = setupAudio()
-            play()
+            if aviableAudio {
+                play()
+            }
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("audioFinished"),
+                                                   object: nil, queue: .main) { _ in
+                next()
+            }
         })
         .onDisappear(perform: {
-            pause()
+            player?.stop()
+            player = nil
         })
-        .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
+        .onReceive(
+            Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
             updateProgress()
         }
         .navigationBarHidden(true)

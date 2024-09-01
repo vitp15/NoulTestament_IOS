@@ -88,7 +88,7 @@
 		DDF0C1FE2C81DF8D008A669A /* 12_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0EF2C81DF67008A669A /* 12_2-Corinteni.mp3 */; };
 		DDF0C1FF2C81DF8D008A669A /* 03_2-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F02C81DF67008A669A /* 03_2-Corinteni.mp3 */; };
 		DDF0C2002C81DF8D008A669A /* 21_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F22C81DF6E008A669A /* 21_Matei.mp3 */; };
-		DDF0C2012C81DF8D008A669A /* 03_Matei .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F32C81DF6E008A669A /* 03_Matei .mp3 */; };
+		DDF0C2012C81DF8D008A669A /* 03_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F32C81DF6E008A669A /* 03_Matei.mp3 */; };
 		DDF0C2022C81DF8D008A669A /* 06_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F42C81DF6E008A669A /* 06_Matei.mp3 */; };
 		DDF0C2032C81DF8D008A669A /* 04_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F52C81DF6E008A669A /* 04_Matei.mp3 */; };
 		DDF0C2042C81DF8D008A669A /* 23_Matei.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0F62C81DF6E008A669A /* 23_Matei.mp3 */; };
@@ -369,7 +369,7 @@
 		DDF0C0EF2C81DF67008A669A /* 12_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12_2-Corinteni.mp3"; sourceTree = "<group>"; };
 		DDF0C0F02C81DF67008A669A /* 03_2-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_2-Corinteni.mp3"; sourceTree = "<group>"; };
 		DDF0C0F22C81DF6E008A669A /* 21_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 21_Matei.mp3; sourceTree = "<group>"; };
-		DDF0C0F32C81DF6E008A669A /* 03_Matei .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03_Matei .mp3"; sourceTree = "<group>"; };
+		DDF0C0F32C81DF6E008A669A /* 03_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03_Matei.mp3; sourceTree = "<group>"; };
 		DDF0C0F42C81DF6E008A669A /* 06_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06_Matei.mp3; sourceTree = "<group>"; };
 		DDF0C0F52C81DF6E008A669A /* 04_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 04_Matei.mp3; sourceTree = "<group>"; };
 		DDF0C0F62C81DF6E008A669A /* 23_Matei.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 23_Matei.mp3; sourceTree = "<group>"; };
@@ -851,7 +851,7 @@
 			isa = PBXGroup;
 			children = (
 				DDF0C0F22C81DF6E008A669A /* 21_Matei.mp3 */,
-				DDF0C0F32C81DF6E008A669A /* 03_Matei .mp3 */,
+				DDF0C0F32C81DF6E008A669A /* 03_Matei.mp3 */,
 				DDF0C0F42C81DF6E008A669A /* 06_Matei.mp3 */,
 				DDF0C0F52C81DF6E008A669A /* 04_Matei.mp3 */,
 				DDF0C0F62C81DF6E008A669A /* 23_Matei.mp3 */,
@@ -1439,7 +1439,7 @@
 				DDF0C1E62C81DF8D008A669A /* 05_Marcu.mp3 in Resources */,
 				DDF0C2612C81DF8E008A669A /* 01_Ioan.mp3 in Resources */,
 				DDF0C27B2C81DF8E008A669A /* 04_Evrei.mp3 in Resources */,
-				DDF0C2012C81DF8D008A669A /* 03_Matei .mp3 in Resources */,
+				DDF0C2012C81DF8D008A669A /* 03_Matei.mp3 in Resources */,
 				DD6744BE2C807DB60022971D /* Roboto-MediumItalic.ttf in Resources */,
 				DDF0C2662C81DF8E008A669A /* 02_Ioan.mp3 in Resources */,
 				DDF0C2852C81DF8E008A669A /* 01_Evrei.mp3 in Resources */,
