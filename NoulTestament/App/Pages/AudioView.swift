@@ -38,7 +38,7 @@ struct AudioView: View {
             
             // Book name and chapter
             VStack {
-                Text(self.aviableAudio ? book.name : "Acest capitol nu e disponibil")
+                Text(aviableAudio ? book.name : "Acest capitol nu e disponibil")
                     .font(.roboto, size: 40)
                     .fontWeight(.medium)
                     .minimumScaleFactor(0.75)
@@ -46,7 +46,7 @@ struct AudioView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color(.onSurface))
                 
-                Text(self.aviableAudio ? String(currChapter) : "")
+                Text(aviableAudio ? String(currChapter) : "")
                     .font(.roboto, size: 64)
                     .fontWeight(.medium)
                     .minimumScaleFactor(0.75)
@@ -60,13 +60,13 @@ struct AudioView: View {
             // Skip second buttons
             HStack {
                 Button(action: {
-                    
+                    replay(time: 5)
                 }) {
                     Image(.replay_5)
                 }
                 Spacer()
                 Button(action: {
-                    
+                    forward(time: 5)
                 }) {
                     Image(.forward_5)
                 }
@@ -84,9 +84,9 @@ struct AudioView: View {
                 Spacer()
                 Button(action: {
                     if isPlaying {
-                        self.pause()
+                        pause()
                     } else {
-                        self.play()
+                        play()
                     }
                 }) {
                     Image(isPlaying ? .pause : .play)
@@ -105,31 +105,31 @@ struct AudioView: View {
             VStack {
                 ZStack(alignment: .leading) {
                     Capsule().fill(Color(.tertiaryFixedDim)).frame(height: 7)
-                    Capsule().fill(Color(.tertiary)).frame(width: self.width, height: 7)
+                    Capsule().fill(Color(.tertiary)).frame(width: width, height: 7)
                 }
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                             .onChanged({ (value) in
-                                self.isDragged = true
-                                self.width = value.location.x
+                                isDragged = true
+                                width = value.location.x
                             }).onEnded({ (value) in
-                                let percent: Double = Double(value.location.x / self.maxWidth)
-                                self.seekAudio(to: self.totalTime * percent)
-                                self.isDragged = false
+                                let percent: Double = Double(value.location.x / maxWidth)
+                                seekAudio(to: totalTime * percent)
+                                isDragged = false
                             }))
                 .background(GeometryReader { geometry in
                     Color.clear
                         .onAppear {
-                            self.maxWidth = geometry.size.width
+                            maxWidth = geometry.size.width
                         }
                 })
                 
                 HStack {
-                    Text(self.timeString(time: self.currentTime))
+                    Text(timeString(time: currentTime))
                         .font(.roboto, size: 16)
                         .fontWeight(.regular)
                         .foregroundColor(Color(.tertiary))
                     Spacer()
-                    Text(self.timeString(time: self.totalTime))
+                    Text(timeString(time: totalTime))
                         .font(.roboto, size: 16)
                         .fontWeight(.regular)
                         .foregroundColor(Color(.tertiary))
@@ -158,11 +158,11 @@ struct AudioView: View {
                 }
         )
         .onAppear(perform: {
-            self.aviableAudio = self.setupAudio()
-            self.play()
+            aviableAudio = setupAudio()
+            play()
         })
         .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
-            self.updateProgress()
+            updateProgress()
         }
         .navigationBarHidden(true)
     }

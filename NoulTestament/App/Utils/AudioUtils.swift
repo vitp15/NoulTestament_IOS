@@ -16,8 +16,8 @@ extension AudioView {
             return false
         }
         do {
-            self.player = try AVAudioPlayer(contentsOf: url)
-            self.totalTime = player?.duration ?? 0.0
+            player = try AVAudioPlayer(contentsOf: url)
+            totalTime = player?.duration ?? 0.0
             player?.prepareToPlay()
         } catch {
             print("Error loading audio: \(error)")
@@ -28,15 +28,26 @@ extension AudioView {
     func play() {
         if let player = self.player {
             player.play()
-            self.isPlaying = true
+            isPlaying = true
         }
     }
     
     func pause() {
         if let player = self.player {
             player.pause()
-            self.isPlaying = false
+            isPlaying = false
         }
+    }
+    
+    func forward(time: TimeInterval) {
+        player?.currentTime = (currentTime + time <= totalTime) ? currentTime + time : totalTime
+        if currentTime + time > totalTime {
+            pause()
+        }
+    }
+
+    func replay(time: TimeInterval) {
+        player?.currentTime = (currentTime - time >= 0) ? currentTime - time : 0
     }
     
     func updateProgress() {
