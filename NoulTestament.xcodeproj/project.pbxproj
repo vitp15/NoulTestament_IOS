@@ -34,6 +34,9 @@
 		DD8963DF2C7F510200428C12 /* BookSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8963DE2C7F510200428C12 /* BookSelectView.swift */; };
 		DD8963E12C7F510300428C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8963E02C7F510300428C12 /* Assets.xcassets */; };
 		DD8963E42C7F510300428C12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8963E32C7F510300428C12 /* Preview Assets.xcassets */; };
+		DDEB00272C86FC33007F3C6E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB00262C86FC33007F3C6E /* Note.swift */; };
+		DDEB002A2C8726B8007F3C6E /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB00292C8726B8007F3C6E /* NotesView.swift */; };
+		DDEB002D2C8729CC007F3C6E /* NoteItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB002C2C8729CC007F3C6E /* NoteItemView.swift */; };
 		DDED9A802CAF151E00AB7079 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDED9A7F2CAF151E00AB7079 /* Storage.swift */; };
 		DDF0C1CA2C81DF8D008A669A /* 01_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0B72C81DF62008A669A /* 01_1-Corinteni.mp3 */; };
 		DDF0C1CB2C81DF8D008A669A /* 09_1-Corinteni.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDF0C0B82C81DF62008A669A /* 09_1-Corinteni.mp3 */; };
@@ -317,6 +320,9 @@
 		DD8963E02C7F510300428C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD8963E32C7F510300428C12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD8963E52C7F510300428C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDEB00262C86FC33007F3C6E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		DDEB00292C8726B8007F3C6E /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		DDEB002C2C8729CC007F3C6E /* NoteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItemView.swift; sourceTree = "<group>"; };
 		DDED9A7F2CAF151E00AB7079 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		DDF0C0B72C81DF62008A669A /* 01_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01_1-Corinteni.mp3"; sourceTree = "<group>"; };
 		DDF0C0B82C81DF62008A669A /* 09_1-Corinteni.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09_1-Corinteni.mp3"; sourceTree = "<group>"; };
@@ -588,6 +594,7 @@
 				DD6D588A2C83A0D800169BB5 /* AudioUtils.swift */,
 				DD6647942C84C4300024F3FD /* NotificationHandler.swift */,
 				DDED9A7F2CAF151E00AB7079 /* Storage.swift */,
+				DDEB00262C86FC33007F3C6E /* Note.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -598,6 +605,7 @@
 				DD8963DE2C7F510200428C12 /* BookSelectView.swift */,
 				DD6744992C8074130022971D /* ChapterSelectView.swift */,
 				DD67449D2C8074310022971D /* AudioView.swift */,
+				DDEB00292C8726B8007F3C6E /* NotesView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -607,6 +615,7 @@
 			children = (
 				DD6744A22C8074E70022971D /* BookItemView.swift */,
 				DD650E4D2C80B263000103E9 /* ChapterItemView.swift */,
+				DDEB002C2C8729CC007F3C6E /* NoteItemView.swift */,
 			);
 			path = ListItems;
 			sourceTree = "<group>";
@@ -1539,6 +1548,7 @@
 				DD6744A32C8074E70022971D /* BookItemView.swift in Sources */,
 				DD6D588B2C83A0D800169BB5 /* AudioUtils.swift in Sources */,
 				DD67449E2C8074310022971D /* AudioView.swift in Sources */,
+				DDEB00272C86FC33007F3C6E /* Note.swift in Sources */,
 				DD6744C62C8085D20022971D /* CustomFonts.swift in Sources */,
 				DD6744A82C8077840022971D /* CustomIcons.swift in Sources */,
 				DD6B09DF2C7F70B40077A0F9 /* CustomImages.swift in Sources */,
@@ -1547,6 +1557,8 @@
 				DD650E4A2C80A6B2000103E9 /* Book.swift in Sources */,
 				DD8963DD2C7F510200428C12 /* NoulTestamentApp.swift in Sources */,
 				DD650E4E2C80B263000103E9 /* ChapterItemView.swift in Sources */,
+				DDEB002D2C8729CC007F3C6E /* NoteItemView.swift in Sources */,
+				DDEB002A2C8726B8007F3C6E /* NotesView.swift in Sources */,
 				DD6647952C84C4300024F3FD /* NotificationHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

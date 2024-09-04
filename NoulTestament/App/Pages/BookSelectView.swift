@@ -9,14 +9,11 @@ import SwiftUI
 import UserNotifications
 
 struct BookSelectView: View {
-    let books: [Book]
-    
     @State var goToLastAudio: Bool = false
     @State var lastOrder: Int = 1
     @State var lastChapter: Int = 1
     
     init() {
-        books = getAllBooks()
         // Customize the navigation bar appearance
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
@@ -39,12 +36,13 @@ struct BookSelectView: View {
         NavigationView {
             ZStack {
                 NavigationLink(
-                    destination: AudioView(book: books[lastOrder - 1], currChapter: lastChapter, onPause: true),
+                    destination: AudioView(book: Storage.instance.books[lastOrder - 1],
+                                           currChapter: lastChapter, onPause: true),
                     isActive: $goToLastAudio,
                     label: { EmptyView() }
                 )
                 List {
-                    ForEach(books, id: \.order) { book in
+                    ForEach(Storage.instance.books, id: \.order) { book in
                         ZStack {
                             NavigationLink(
                                 destination: ChapterSelectView(book: book)
@@ -81,8 +79,8 @@ struct BookSelectView: View {
                 removeForceClosed()
                 let components = lastClosed.split(separator: " ")
                 if components.count == 2 {
-                    lastChapter = Int(components[0]) ?? 1
-                    lastOrder = Int(components[1]) ?? 1
+                    lastOrder = Int(components[0]) ?? 1
+                    lastChapter = Int(components[1]) ?? 1
                     goToLastAudio = true
                 }
             } else {

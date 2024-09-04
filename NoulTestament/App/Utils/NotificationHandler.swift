@@ -19,7 +19,7 @@ func handleNotifications() {
 private func scheduleNotifications() {
     let content = UNMutableNotificationContent()
     content.title = "Biblia - Noul Testament"
-    content.body = "Nu uita să asculți din Cuvânt și azi!"
+    content.body = "Ascultă din Cuvânt și azi!"
     content.sound = nil
     content.badge = 0
     

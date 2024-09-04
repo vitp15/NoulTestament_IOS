@@ -65,9 +65,8 @@ extension AudioView {
         if (currChapter > 1) {
             self.currChapter -= 1
         } else {
-            let books = getAllBooks()
             if book.order > 1 {
-                book = books[book.order - 2]
+                book = Storage.instance.books[book.order - 2]
                 currChapter = book.chapters
             } else {
                 return
@@ -80,9 +79,8 @@ extension AudioView {
         if (currChapter < book.chapters) {
             self.currChapter += 1
         } else {
-            let books = getAllBooks()
-            if book.order < books.count {
-                book = books[book.order]
+            if book.order < Storage.instance.books.count {
+                book = Storage.instance.books[book.order]
                 currChapter = 1
             } else {
                 return

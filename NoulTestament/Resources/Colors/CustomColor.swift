@@ -15,6 +15,7 @@ enum CustomColors: String {
     case outline
     case tertiary
     case tertiaryFixedDim
+    case notes
 }
 
 extension Color {

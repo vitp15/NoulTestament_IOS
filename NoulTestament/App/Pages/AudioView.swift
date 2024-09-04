@@ -35,7 +35,7 @@ struct AudioView: View {
     
     var body: some View {
         VStack {
-            // Back button
+            // Toolbar...
             HStack {
                 Button(action: {
                     back()
@@ -43,8 +43,20 @@ struct AudioView: View {
                     Image(.arrow_back)
                 }
                 Spacer()
+                NavigationLink(
+                    destination: NotesView(order: book.order, chapter: currChapter)
+                        .navigationBarBackButtonHidden(true),
+                    label: {
+                        Text("Adaugă\nnotiță")
+                            .font(.roboto, size: 20)
+                            .fontWeight(.medium)
+                            .minimumScaleFactor(0.75)
+                            .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(.notes))
+                    })
             }
-            .padding(EdgeInsets(top: 25, leading: 16, bottom: 0, trailing: 0))
+            .padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
             Spacer()
             
             ZStack {
@@ -222,7 +234,7 @@ struct AudioView: View {
             case .background, .inactive:
                 if !backClicked {
                     saveCurrentTime(time: currentTime, book: book, currentChapter: currChapter)
-                    saveForceClosed(currentChapter: currChapter, bookOrder: book.order)
+                    saveForceClosed(bookOrder: book.order, currentChapter: currChapter)
                 }
             case .active:
                 removeCurrentTime(book: book, currentChapter: currChapter)
