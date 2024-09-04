@@ -15,6 +15,7 @@ class Storage: ObservableObject {
     private init() {
         self.books = getAllBooks()
         self.notes = loadNotes()
+        updateBooksWithNotes()
     }
     
     func saveNotes() {
@@ -48,6 +49,15 @@ class Storage: ObservableObject {
         guard let key_notes = notes[key],
               key_notes.count >= nr else { return true }
         return false
+    }
+    
+    private func updateBooksWithNotes() {
+        for (key, _) in notes {
+            if let order = getOrder(key: key), (1...27).contains(order),
+               let chapter = getChapter(key: key) {
+                books[order - 1].hasNotes[chapter] = true
+            }
+        }
     }
 }
 

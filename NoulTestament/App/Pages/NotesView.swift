@@ -82,25 +82,24 @@ struct NotesView: View {
             }
         }
         .onAppear(perform: {
-            if creatingNote {
-                let key: String = createKey(order: order, chapter: chapter)
-                var notes_from_key = (storage.notes[key] ?? []).sorted { $0.character < $1.character }
-                if !storage.existAtTime(key: key, time: createAtTime, interval: 0) {
-                    var character = Character("A")
-                    if let lastNote = notes_from_key.last {
-                        character = lastNote.character
-                        if let unicodeScalar = character.unicodeScalars.first?.value {
-                            let nextValue = unicodeScalar == 90 ? 65 : unicodeScalar + 1 // 90 is "Z", 65 is "A"
-                            if let nextCharacter = UnicodeScalar(nextValue) {
-                                character = Character(nextCharacter)
-                            }
+            let key: String = createKey(order: order, chapter: chapter)
+            var notes_from_key = (storage.notes[key] ?? []).sorted { $0.character < $1.character }
+            if creatingNote && !storage.existAtTime(key: key, time: createAtTime, interval: 0) {
+                var character = Character("A")
+                if let lastNote = notes_from_key.last {
+                    character = lastNote.character
+                    if let unicodeScalar = character.unicodeScalars.first?.value {
+                        let nextValue = unicodeScalar == 90 ? 65 : unicodeScalar + 1 // 90 is "Z", 65 is "A"
+                        if let nextCharacter = UnicodeScalar(nextValue) {
+                            character = Character(nextCharacter)
                         }
                     }
-                    notes_from_key.insert(Note(character: character, atTime: createAtTime), at: 0)
                 }
-                storage.notes[key] = notes_from_key
-                storage.saveNotes()
+                notes_from_key.insert(Note(character: character, atTime: createAtTime), at: 0)
             }
+            storage.notes[key] = notes_from_key
+            storage.saveNotes()
+            
         })
         .frame(maxWidth: 700)
         .listStyle(PlainListStyle())
@@ -134,6 +133,6 @@ struct NotesView: View {
 
 struct NotesView_Previews: PreviewProvider {
     static var previews: some View {
-        NotesView(order: 1, chapter: 2, creatingNote: true, createAtTime: 1)
+        NotesView(order: 1, chapter: 2, creatingNote: false, createAtTime: 1)
     }
 }

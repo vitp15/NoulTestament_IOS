@@ -52,7 +52,7 @@ func createKey(order: Int, chapter: Int) -> String {
     "\(order) \(chapter)"
 }
 
-func order(from key: String) -> Int? {
+func getOrder(key: String) -> Int? {
     let components = key.split(separator: " ")
     guard components.count == 2,
           let order = Int(components[0]) else {
@@ -61,7 +61,7 @@ func order(from key: String) -> Int? {
     return order
 }
 
-func chapter(from key: String) -> Int? {
+func getChapter(key: String) -> Int? {
     let components = key.split(separator: " ")
     guard components.count == 2,
           let chapter = Int(components[1]) else {

@@ -11,11 +11,13 @@ class Book {
     let order: Int
     let name: String
     let chapters: Int
+    var hasNotes: [Int : Bool]
     
     init(order: Int, name: String, chapters: Int) {
         self.order = order
         self.name = name
         self.chapters = chapters
+        self.hasNotes = [:]
     }
     
     func getAudioName(chapter: Int) -> String {

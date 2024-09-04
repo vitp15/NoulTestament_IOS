@@ -8,37 +8,73 @@
 import SwiftUI
 
 struct ChapterItemView: View {
-    let name: String
+    let book: Book
+    let chapter: Int
+    @State private var isNavigationActive: Bool = false
+    @State private var goToNotes: Bool = false
     
     var body: some View {
-        VStack (alignment: .center, spacing: 0, content: {
+        VStack(alignment: .center, spacing: 0) {
             Spacer()
-            HStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0, content: {
+            HStack(alignment: .center, spacing: 0) {
                 Image(.audio)
+                Spacer()
                 
-                Text(name)
+                Text("\(book.name) \(chapter)")
                     .font(.roboto, size: 24)
                     .fontWeight(.medium)
                     .foregroundColor(Color(.onSurface))
                     .background(Color.clear)
-                    .frame(maxWidth: .infinity, alignment: .center)
-                    .padding(.trailing, 24)
                     .minimumScaleFactor(0.75)
                     .lineLimit(1)
-            })
+                Spacer()
+                
+                if let val = book.hasNotes[chapter], val {
+                    Button(action: {
+                        goToNotes = true
+                    }) {
+                        Image(.notes)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                } else {
+                    Rectangle()
+                        .foregroundColor(Color.clear)
+                        .frame(width: 24)
+                }
+            }
             Spacer()
             Rectangle()
                 .frame(height: 1)
                 .foregroundColor(Color(.outline))
-            
-        })
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            if !goToNotes {
+                isNavigationActive = true
+            }
+        }
         .frame(height: 44)
-        .background(Color.clear)
+        .background(
+            ZStack {
+                NavigationLink(
+                    destination: NotesView(order: book.order, chapter: chapter)
+                        .navigationBarBackButtonHidden(true),
+                    isActive: $goToNotes,
+                    label: { EmptyView() }
+                ).hidden()
+                NavigationLink(
+                    destination: AudioView(book: book, currChapter: chapter, onPause: false)
+                        .navigationBarBackButtonHidden(true),
+                    isActive: $isNavigationActive,
+                    label: { EmptyView() }
+                ).hidden()
+            }
+        )
     }
 }
 
 struct ChapterItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterItemView(name: "Matei")
+        ChapterItemView(book: Book(order: 1, name: "Matei", chapters: 28), chapter: 4)
     }
 }
