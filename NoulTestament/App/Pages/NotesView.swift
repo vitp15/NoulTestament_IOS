@@ -99,6 +99,7 @@ struct NotesView: View {
                     notes_from_key.insert(Note(character: character, atTime: createAtTime), at: 0)
                 }
                 storage.notes[key] = notes_from_key
+                storage.saveNotes()
             }
         })
         .frame(maxWidth: 700)

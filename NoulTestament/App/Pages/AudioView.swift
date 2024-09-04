@@ -21,6 +21,7 @@ struct AudioView: View {
     @State var totalTime: TimeInterval = 0.0
     @State var delegate: AVdelegate = AVdelegate()
     @State var backClicked: Bool = false
+    @State private var showAlert: Bool = false
     @State private var insufficientInterval: Bool = false
     @State private var tooMuchNotes: Bool = false
     @State private var canAddNote: Bool = false
@@ -51,15 +52,21 @@ struct AudioView: View {
                     if Storage.instance.existAtTime(key: createKey(order: book.order, chapter: currChapter),
                                                     time: currentTime, interval: 5) {
                         canAddNote = false
+                        showAlert = true
                         insufficientInterval = true
+                        tooMuchNotes = false
                     } else {
                         if Storage.instance.hasLessNotesThan(key: createKey(order: book.order, chapter: currChapter),
                                                              nr: 10) {
                             canAddNote = true
                             isNavigationBarHidden = false
+                            insufficientInterval = false
+                            tooMuchNotes = false
                         } else {
+                            showAlert = true
                             tooMuchNotes = true
                             canAddNote = false
+                            insufficientInterval = false
                         }
                     }
                 }, label: {
@@ -71,14 +78,12 @@ struct AudioView: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(.notes))
                 })
-                .alert(isPresented: $insufficientInterval, content: {
-                    Alert(title: Text(""),
-                          message: Text("Puteți creea o notă doar la cel puțin 5 secunde diferență față de precedenta"),
-                          dismissButton: .default(Text("OK")))
-                })
-                .alert(isPresented: $tooMuchNotes, content: {
-                    Alert(title: Text(""),
-                          message: Text("Nu puteți creea mai mult de 10 notițe pe capitol"),
+                .alert(isPresented: $showAlert, content: {
+                    let message = insufficientInterval ?
+                        "Puteți crea o notă doar la cel puțin 5 secunde diferență față de precedenta" :
+                        (tooMuchNotes ? "Nu puteți crea mai mult de 10 notițe pe capitol" : "Eroare necunoscută")
+                    return Alert(title: Text(""),
+                          message: Text(message),
                           dismissButton: .default(Text("OK")))
                 })
                 NavigationLink(
