@@ -24,6 +24,7 @@ struct AudioView: View {
     @State private var insufficientInterval: Bool = false
     @State private var tooMuchNotes: Bool = false
     @State private var canAddNote: Bool = false
+    @State var isNavigationBarHidden: Bool = false
     
     @State var book: Book
     @State var currChapter: Int
@@ -55,6 +56,7 @@ struct AudioView: View {
                         if Storage.instance.hasLessNotesThan(key: createKey(order: book.order, chapter: currChapter),
                                                              nr: 10) {
                             canAddNote = true
+                            isNavigationBarHidden = false
                         } else {
                             tooMuchNotes = true
                             canAddNote = false
@@ -218,7 +220,13 @@ struct AudioView: View {
             .padding(.horizontal, 16)
             .padding(.bottom, 20)
         }
-        .navigationBarHidden(true)
+        .navigationBarHidden(isNavigationBarHidden)
+        .onAppear {
+            isNavigationBarHidden = true
+        }
+        .onDisappear {
+            isNavigationBarHidden = false
+        }
         .frame(maxWidth: 700)
         .background(ZStack {
             Image(.audio_walpaper)

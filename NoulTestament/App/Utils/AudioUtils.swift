@@ -11,7 +11,9 @@ import AVKit
 extension AudioView {
     func back() {
         backClicked = true
-        player?.pause()
+        player?.stop()
+        player = nil
+        isNavigationBarHidden = false
         presentationMode.wrappedValue.dismiss()
     }
     

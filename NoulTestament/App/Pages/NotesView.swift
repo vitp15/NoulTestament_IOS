@@ -116,7 +116,7 @@ struct NotesView: View {
                 }
         )
         .navigationBarHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
-        .navigationTitle(Storage.instance.books[order - 1].name)
+        .navigationTitle("\(Storage.instance.books[order - 1].name) \(chapter)")
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 HStack {
