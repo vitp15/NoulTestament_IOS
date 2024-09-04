@@ -22,6 +22,7 @@ enum CustomIcons: String {
     case note_mark
     case edit
     case delete
+    case notes
 }
 
 extension Image {

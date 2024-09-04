@@ -21,6 +21,9 @@ struct AudioView: View {
     @State var totalTime: TimeInterval = 0.0
     @State var delegate: AVdelegate = AVdelegate()
     @State var backClicked: Bool = false
+    @State private var insufficientInterval: Bool = false
+    @State private var tooMuchNotes: Bool = false
+    @State private var canAddNote: Bool = false
     
     @State var book: Book
     @State var currChapter: Int
@@ -43,17 +46,46 @@ struct AudioView: View {
                     Image(.arrow_back)
                 }
                 Spacer()
+                Button(action: {
+                    if Storage.instance.existAtTime(key: createKey(order: book.order, chapter: currChapter),
+                                                    time: currentTime, interval: 5) {
+                        canAddNote = false
+                        insufficientInterval = true
+                    } else {
+                        if Storage.instance.hasLessNotesThan(key: createKey(order: book.order, chapter: currChapter),
+                                                             nr: 10) {
+                            canAddNote = true
+                        } else {
+                            tooMuchNotes = true
+                            canAddNote = false
+                        }
+                    }
+                }, label: {
+                    Text("Adaugă\nnotiță")
+                        .font(.roboto, size: 20)
+                        .fontWeight(.medium)
+                        .minimumScaleFactor(0.75)
+                        .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(.notes))
+                })
+                .alert(isPresented: $insufficientInterval, content: {
+                    Alert(title: Text(""),
+                          message: Text("Puteți creea o notă doar la cel puțin 5 secunde diferență față de precedenta"),
+                          dismissButton: .default(Text("OK")))
+                })
+                .alert(isPresented: $tooMuchNotes, content: {
+                    Alert(title: Text(""),
+                          message: Text("Nu puteți creea mai mult de 10 notițe pe capitol"),
+                          dismissButton: .default(Text("OK")))
+                })
                 NavigationLink(
-                    destination: NotesView(order: book.order, chapter: currChapter)
+                    destination: NotesView(order: book.order, chapter: currChapter,
+                                           creatingNote: true, createAtTime: currentTime)
                         .navigationBarBackButtonHidden(true),
+                    isActive: $canAddNote,
                     label: {
-                        Text("Adaugă\nnotiță")
-                            .font(.roboto, size: 20)
-                            .fontWeight(.medium)
-                            .minimumScaleFactor(0.75)
-                            .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(.notes))
+                        EmptyView()
                     })
             }
             .padding(EdgeInsets(top: 20, leading: 16, bottom: 0, trailing: 16))
@@ -186,6 +218,7 @@ struct AudioView: View {
             .padding(.horizontal, 16)
             .padding(.bottom, 20)
         }
+        .navigationBarHidden(true)
         .frame(maxWidth: 700)
         .background(ZStack {
             Image(.audio_walpaper)
@@ -228,7 +261,6 @@ struct AudioView: View {
             Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
             updateProgress()
         }
-        .navigationBarHidden(true)
         .onChange(of: scenePhase) { phase in
             switch phase {
             case .background, .inactive:

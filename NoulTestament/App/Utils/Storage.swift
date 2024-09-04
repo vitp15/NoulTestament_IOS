@@ -33,6 +33,22 @@ class Storage: ObservableObject {
             }
         )
     }
+    
+    func existAtTime(key: String, time: TimeInterval, interval: TimeInterval) -> Bool {
+        guard let key_notes = notes[key] else { return false }
+        for note in key_notes {
+            if abs(note.atTime - time) <= interval {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func hasLessNotesThan(key: String, nr: Int) -> Bool {
+        guard let key_notes = notes[key],
+              key_notes.count >= nr else { return true }
+        return false
+    }
 }
 
 func saveCurrentTime(time: TimeInterval, book: Book, currentChapter: Int) {

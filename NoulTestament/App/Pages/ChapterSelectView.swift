@@ -46,6 +46,7 @@ struct ChapterSelectView: View {
                     }
                 }
         )
+        .navigationBarHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
         .navigationTitle(book.name)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
