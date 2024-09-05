@@ -25,6 +25,7 @@ struct AudioView: View {
     @State private var insufficientInterval: Bool = false
     @State private var tooMuchNotes: Bool = false
     @State private var canAddNote: Bool = false
+    @State private var goToNotes: Bool = false
     @State var isNavigationBarHidden: Bool = false
     
     @State var book: Book
@@ -50,7 +51,7 @@ struct AudioView: View {
                 Spacer()
                 Button(action: {
                     if Storage.instance.existAtTime(key: createKey(order: book.order, chapter: currChapter),
-                                                    time: currentTime, interval: 5) {
+                                                    time: currentTime, interval: 10) {
                         canAddNote = false
                         insufficientInterval = true
                         tooMuchNotes = false
@@ -80,7 +81,7 @@ struct AudioView: View {
                 })
                 .alert(isPresented: $showAlert, content: {
                     let message = insufficientInterval ?
-                        "Puteți crea o notă doar la cel puțin 5 secunde diferență față de precedenta" :
+                        "Puteți crea o notă doar la cel puțin 10 secunde diferență față de precedenta" :
                         (tooMuchNotes ? "Nu puteți crea mai mult de 10 notițe pe capitol" : "Eroare necunoscută")
                     player?.pause()
                     return Alert(title: Text(""), message: Text(message), dismissButton: .default(Text("OK")) {
@@ -192,43 +193,81 @@ struct AudioView: View {
                 }
             })
             .padding(.horizontal, 16)
-            .padding(.bottom, 32)
+            .padding(.bottom, 4)
             
-            // Time
-            VStack {
+            VStack(alignment: .leading, spacing: 0) {
+                // Note marks
                 ZStack(alignment: .leading) {
-                    Capsule().fill(Color(.tertiaryFixedDim)).frame(height: 7)
-                    Capsule().fill(Color(.tertiary)).frame(width: width, height: 7)
-                }
-                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                            .onChanged({ (value) in
-                                isDragged = true
-                                width = value.location.x
-                            }).onEnded({ (value) in
-                                let percent: Double = Double(value.location.x / maxWidth)
-                                seekAudio(to: totalTime * percent)
-                                isDragged = false
-                            }))
-                .background(GeometryReader { geometry in
-                    Color.clear
-                        .onAppear {
-                            maxWidth = geometry.size.width
+                    if let notes_for_key = Storage.instance.notes[createKey(order: book.order, chapter: currChapter)] {
+                        ForEach(notes_for_key, id: \.self) { note in
+                            let padding = CGFloat(note.atTime / totalTime) * maxWidth
+                            ZStack(alignment: .center) {
+                                NavigationLink(
+                                    destination: NotesView(order: book.order, chapter: currChapter)
+                                        .navigationBarBackButtonHidden(true),
+                                    isActive: $goToNotes,
+                                    label: {
+                                        EmptyView()
+                                    }).hidden()
+                                Image(.note_mark)
+                                Text(String(note.character))
+                                    .font(.roboto, size: 16)
+                                    .fontWeight(.medium)
+                                    .minimumScaleFactor(0.75)
+                                    .lineLimit(1)
+                                    .foregroundColor(Color.white)
+                                    .padding(.bottom, 8)
+                            }
+                            .padding(.leading, padding)
+                            .onTapGesture(count: 2, perform: {
+                                isNavigationBarHidden = false
+                                goToNotes = true
+                            })
+                            .onTapGesture(perform: {
+                                seekAudio(to: note.atTime)
+                            })
                         }
-                })
-                
-                HStack {
-                    Text(timeString(time: currentTime))
-                        .font(.roboto, size: 16)
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(.tertiary))
-                    Spacer()
-                    Text(timeString(time: totalTime))
-                        .font(.roboto, size: 16)
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(.tertiary))
+                    }
                 }
+                .frame(height: 31)
+                .padding(.horizontal, 6)
+                
+                // Time
+                VStack {
+                    ZStack(alignment: .leading) {
+                        Capsule().fill(Color(.tertiaryFixedDim)).frame(height: 7)
+                        Capsule().fill(Color(.tertiary)).frame(width: width, height: 7)
+                    }
+                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                                .onChanged({ (value) in
+                                    isDragged = true
+                                    width = value.location.x
+                                }).onEnded({ (value) in
+                                    let percent: Double = Double(value.location.x / maxWidth)
+                                    seekAudio(to: totalTime * percent)
+                                    isDragged = false
+                                }))
+                    .background(GeometryReader { geometry in
+                        Color.clear
+                            .onAppear {
+                                maxWidth = geometry.size.width
+                            }
+                    })
+                    
+                    HStack {
+                        Text(timeString(time: currentTime))
+                            .font(.roboto, size: 16)
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(.tertiary))
+                        Spacer()
+                        Text(timeString(time: totalTime))
+                            .font(.roboto, size: 16)
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(.tertiary))
+                    }
+                }
+                .padding(.horizontal, 16)
             }
-            .padding(.horizontal, 16)
             .padding(.bottom, 20)
         }
         .navigationBarHidden(isNavigationBarHidden)

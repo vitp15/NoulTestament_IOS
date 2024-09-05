@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class Note: Codable, ObservableObject, Identifiable {
+class Note: Codable, ObservableObject, Identifiable, Hashable {
     let character: Character
     let atTime: TimeInterval
     @Published var message: String
@@ -45,6 +45,15 @@ class Note: Codable, ObservableObject, Identifiable {
         try container.encode(String(character), forKey: .character)
         try container.encode(atTime, forKey: .atTime)
         try container.encode(message, forKey: .message)
+    }
+    
+    static func == (lhs: Note, rhs: Note) -> Bool {
+        return lhs.character == rhs.character && lhs.atTime == rhs.atTime
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(character)
+        hasher.combine(atTime)
     }
 }
 
