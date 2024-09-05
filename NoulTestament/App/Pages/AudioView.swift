@@ -210,7 +210,7 @@ struct AudioView: View {
         .onDisappear(perform: {
             player?.stop()
             player = nil
-            UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
+            saveCurrentTime(time: currentTime, book: book, currentChapter: currChapter)
         })
         .onReceive(
             Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
@@ -220,17 +220,13 @@ struct AudioView: View {
         .onChange(of: scenePhase) { phase in
             switch phase {
             case .background, .inactive:
-                UserDefaults.standard.set(currentTime, forKey: book.getAudioName(chapter: currChapter))
                 if !backClicked {
-                    UserDefaults.standard.set("\(currChapter) \(book.order)", forKey: "ForceClosed")
+                    saveCurrentTime(time: currentTime, book: book, currentChapter: currChapter)
+                    saveForceClosed(currentChapter: currChapter, bookOrder: book.order)
                 }
             case .active:
-                if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
-                    UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
-                }
-                if UserDefaults.standard.object(forKey: "ForceClosed") != nil {
-                    UserDefaults.standard.removeObject(forKey: "ForceClosed")
-                }
+                removeCurrentTime(book: book, currentChapter: currChapter)
+                removeForceClosed()
             @unknown default:
                 // Handle future cases
                 print("Unknown scene phase")

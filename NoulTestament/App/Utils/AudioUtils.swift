@@ -16,12 +16,8 @@ extension AudioView {
     }
     
     func setupAudio() -> Bool {
-        if UserDefaults.standard.object(forKey: book.getAudioName(chapter: currChapter)) != nil {
-            currentTime = UserDefaults.standard.double(forKey: book.getAudioName(chapter: currChapter))
-            UserDefaults.standard.removeObject(forKey: book.getAudioName(chapter: currChapter))
-        } else {
-            currentTime = 0.0
-        }
+        currentTime = loadCurrentTime(book: book, currentChapter: currChapter)
+        removeCurrentTime(book: book, currentChapter: currChapter)
         guard let url = Bundle.main.url(forResource: book.getAudioName(chapter: currChapter), withExtension: "mp3")
         else {
             print("Error getting audio url")

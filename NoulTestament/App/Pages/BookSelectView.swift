@@ -77,8 +77,8 @@ struct BookSelectView: View {
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear(perform: {
             handleNotifications()
-            if let lastClosed = UserDefaults.standard.string(forKey: "ForceClosed") {
-                UserDefaults.standard.removeObject(forKey: "ForceClosed")
+            if let lastClosed = loadLastForceClosed() {
+                removeForceClosed()
                 let components = lastClosed.split(separator: " ")
                 if components.count == 2 {
                     lastChapter = Int(components[0]) ?? 1

@@ -9,13 +9,17 @@ import SwiftUI
 import UserNotifications
 
 func handleNotifications() {
-    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in }
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+        if granted {
+            scheduleNotifications()
+        }
+    }
 }
 
 private func scheduleNotifications() {
     let content = UNMutableNotificationContent()
     content.title = "Biblia - Noul Testament"
-    content.body = "Nu uita să citești un capitol astăzi"
+    content.body = "Nu uita să asculți din Cuvânt și azi!"
     content.sound = nil
     content.badge = 0
     
