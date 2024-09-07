@@ -25,7 +25,7 @@ struct AudioView: View {
     @State private var insufficientInterval: Bool = false
     @State private var tooMuchNotes: Bool = false
     @State private var canAddNote: Bool = false
-    @State private var goToNotes: Bool = false
+//    @State private var goToNotes: Bool = false
     @State var isNavigationBarHidden: Bool = false
     
     @State var book: Book
@@ -202,13 +202,13 @@ struct AudioView: View {
                         ForEach(notes_for_key, id: \.self) { note in
                             let padding = CGFloat(note.atTime / totalTime) * maxWidth
                             ZStack(alignment: .center) {
-                                NavigationLink(
-                                    destination: NotesView(order: book.order, chapter: currChapter)
-                                        .navigationBarBackButtonHidden(true),
-                                    isActive: $goToNotes,
-                                    label: {
-                                        EmptyView()
-                                    }).hidden()
+//                                NavigationLink(
+//                                    destination: NotesView(order: book.order, chapter: currChapter)
+//                                        .navigationBarBackButtonHidden(true),
+//                                    isActive: $goToNotes,
+//                                    label: {
+//                                        EmptyView()
+//                                    }).hidden()
                                 Image(.note_mark)
                                 Text(String(note.character))
                                     .font(.roboto, size: 16)
@@ -219,10 +219,11 @@ struct AudioView: View {
                                     .padding(.bottom, 8)
                             }
                             .padding(.leading, padding)
-                            .onTapGesture(count: 2, perform: {
-                                isNavigationBarHidden = false
-                                goToNotes = true
-                            })
+//                            .onTapGesture(count: 2, perform: {
+//                                player?.pause()
+//                                isNavigationBarHidden = false
+//                                goToNotes = true
+//                            })
                             .onTapGesture(perform: {
                                 seekAudio(to: note.atTime)
                             })
