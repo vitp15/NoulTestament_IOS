@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ChapterItemView: View {
+    @ObservedObject private var storage: Storage = Storage.instance
     let book: Book
     let chapter: Int
     @State private var isNavigationActive: Bool = false
@@ -29,7 +30,8 @@ struct ChapterItemView: View {
                     .lineLimit(1)
                 Spacer()
                 
-                if let val = book.hasNotes[chapter], val {
+                if let index = book.order - 1, (0...26).contains(index),
+                   let val = storage.books[index].hasNotes[chapter], val {
                     Button(action: {
                         goToNotes = true
                     }) {

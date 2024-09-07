@@ -51,6 +51,7 @@ struct NotesView: View {
                                     notes.wrappedValue.remove(at: index)
                                 }
                                 storage.saveNotes()
+                                storage.updateBooksWithNotes()
                             }
                         )
                         .listRowBackground(Color.clear)
@@ -77,6 +78,7 @@ struct NotesView: View {
                 .onDelete(perform: { indexSet in
                     notes.wrappedValue.remove(atOffsets: indexSet)
                     storage.saveNotes()
+                    storage.updateBooksWithNotes()
                 })
                 .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
             }
@@ -99,7 +101,7 @@ struct NotesView: View {
             }
             storage.notes[key] = notes_from_key
             storage.saveNotes()
-            
+            storage.updateBooksWithNotes()
         })
         .frame(maxWidth: 700)
         .listStyle(PlainListStyle())

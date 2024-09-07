@@ -51,13 +51,18 @@ class Storage: ObservableObject {
         return false
     }
     
-    private func updateBooksWithNotes() {
+    func updateBooksWithNotes() {
         for (key, _) in notes {
-            if let order = getOrder(key: key), (1...27).contains(order),
+            if let count = notes[key]?.count, count > 0,
+               let order = getOrder(key: key), (1...27).contains(order),
                let chapter = getChapter(key: key) {
                 books[order - 1].hasNotes[chapter] = true
+            } else if let order = getOrder(key: key), (1...27).contains(order),
+                      let chapter = getChapter(key: key) {
+                books[order - 1].hasNotes[chapter] = false
             }
         }
+        objectWillChange.send()
     }
 }
 
