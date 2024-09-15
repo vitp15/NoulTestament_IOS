@@ -18,6 +18,7 @@ enum CustomIcons: String {
     case replay_5
     case next = "skip_next"
     case previous = "skip_previous"
+    case note_icon
     case note_flag
     case note_mark
     case edit

@@ -12,12 +12,22 @@ struct NoteItemView: View {
     @State private var editMode: Bool = true
     @State private var textField: String = ""
     @State private var showingAlert: Bool = false
+    @State private var navigateToAudio: Bool = false
+    private let order: Int
+    private let chapter: Int
     private var deleteNote: () -> Void
     
-    init(note: Binding<Note>, editMode: Bool, deleteNote: @escaping () -> Void) {
+    init(note: Binding<Note>, editMode: Bool, order: Int,
+         chapter: Int, deleteNote: @escaping () -> Void) {
         self._note = note
         _editMode = State(initialValue: editMode)
         _textField = State(initialValue: note.wrappedValue.message)
+        if (1...27).contains(order) {
+            self.order = order
+        } else {
+            self.order = 1
+        }
+        self.chapter = chapter
         self.deleteNote = deleteNote
     }
     
@@ -25,18 +35,19 @@ struct NoteItemView: View {
         VStack (alignment: .center, spacing: 0, content: {
             Spacer()
             HStack (alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0, content: {
-                ZStack {
-                    Image(.note_flag)
-                    Text(String(note.character))
-                        .font(.roboto, size: 32)
-                        .fontWeight(.medium)
-                        .foregroundColor(Color(.white))
-                        .background(Color.clear)
-                        .padding(.bottom, 20)
-                        .minimumScaleFactor(0.6)
-                        .lineLimit(1)
-                }
-                .frame(width: 40, height: 68, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Button(action: goToAudio, label: {
+                    ZStack {
+                        Image(.note_icon)
+                        Text(String(note.character))
+                            .font(.roboto, size: 32)
+                            .fontWeight(.medium)
+                            .foregroundColor(Color(.white))
+                            .background(Color.clear)
+                            .minimumScaleFactor(0.6)
+                            .lineLimit(1)
+                    }
+                    .frame(width: 50, height: 68, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                })
                 
                 if editMode {
                     TextField("Introduceți notița", text: $textField, onCommit: {
@@ -51,15 +62,17 @@ struct NoteItemView: View {
                     .background(Color.clear)
                     .lineLimit(3)
                 } else {
-                    Text(note.message)
-                        .font(.roboto, size: 18)
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(.onSurface))
-                        .background(Color.clear)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.horizontal, 16)
-                        .minimumScaleFactor(0.75)
-                        .lineLimit(3)
+                    Button(action: goToAudio, label: {
+                        Text(note.message)
+                            .font(.roboto, size: 18)
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(.onSurface))
+                            .background(Color.clear)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.horizontal, 16)
+                            .minimumScaleFactor(0.75)
+                            .lineLimit(3)
+                    })
                 }
                 
                 if !editMode {
@@ -84,7 +97,6 @@ struct NoteItemView: View {
                     }
                 }
             })
-            .background(Color.clear)
             Spacer()
             Rectangle()
                 .frame(height: 1)
@@ -92,7 +104,22 @@ struct NoteItemView: View {
             
         })
         .frame(height: 96)
-        .background(Color.clear)
+        .background(
+            NavigationLink(
+                destination: AudioView(book: Storage.instance.books[order - 1],
+                                       currChapter: chapter, onPause: false)
+                    .navigationBarBackButtonHidden(true),
+                isActive: $navigateToAudio,
+                label: { EmptyView() }
+            )
+            .hidden())
+    }
+    
+    private func goToAudio() {
+        let book = Storage.instance.books[order - 1]
+        removeCurrentTime(book: book, currentChapter: chapter)
+        saveCurrentTime(time: note.atTime, book: book, currentChapter: chapter)
+        navigateToAudio = true
     }
 }
 
@@ -106,6 +133,8 @@ struct NoteItemView_Previews: PreviewProvider {
                 set: { newNote in }
             ),
             editMode: false,
+            order: 1,
+            chapter: 1,
             deleteNote: { }
         )
     }

@@ -12,7 +12,8 @@ struct NotesView: View {
     @StateObject private var storage = Storage.instance
     let order: Int
     let chapter: Int
-    let creatingNote: Bool
+    @State var creatingNote: Bool
+    @State var hasComingBack: Bool = false
     let createAtTime: TimeInterval
     
     init(order: Int, chapter: Int, creatingNote: Bool = false, createAtTime: TimeInterval = 0) {
@@ -22,7 +23,7 @@ struct NotesView: View {
             self.order = 1
         }
         self.chapter = chapter
-        self.creatingNote = creatingNote
+        _creatingNote = State(initialValue: creatingNote)
         if createAtTime >= 0 {
             self.createAtTime = createAtTime
         } else {
@@ -46,6 +47,8 @@ struct NotesView: View {
                                 }
                             }),
                             editMode: true,
+                            order: order,
+                            chapter: chapter,
                             deleteNote: {
                                 if let index = notes.wrappedValue.firstIndex(where: { $0.atTime == note.atTime }) {
                                     notes.wrappedValue.remove(at: index)
@@ -65,11 +68,14 @@ struct NotesView: View {
                                 }
                             }),
                             editMode: false,
+                            order: order,
+                            chapter: chapter,
                             deleteNote: {
                                 if let index = notes.wrappedValue.firstIndex(where: { $0.atTime == note.atTime }) {
                                     notes.wrappedValue.remove(at: index)
                                 }
                                 storage.saveNotes()
+                                storage.updateBooksWithNotes()
                             }
                         )
                         .listRowBackground(Color.clear)
@@ -86,22 +92,26 @@ struct NotesView: View {
         .onAppear(perform: {
             let key: String = createKey(order: order, chapter: chapter)
             var notes_from_key = (storage.notes[key] ?? []).sorted { $0.character < $1.character }
-            if creatingNote && !storage.existAtTime(key: key, time: createAtTime, interval: 0) {
-                var character = Character("A")
-                if let lastNote = notes_from_key.last {
-                    character = lastNote.character
-                    if let unicodeScalar = character.unicodeScalars.first?.value {
-                        let nextValue = unicodeScalar == 90 ? 65 : unicodeScalar + 1 // 90 is "Z", 65 is "A"
-                        if let nextCharacter = UnicodeScalar(nextValue) {
-                            character = Character(nextCharacter)
+            if creatingNote && !storage.existAtTime(key: key, time: createAtTime, interval: 0)
+                && !hasComingBack {
+                var nextCharacter = Character("A")
+                for note in notes_from_key {
+                    if note.character == nextCharacter {
+                        if let scalarValue = nextCharacter.unicodeScalars.first?.value {
+                            nextCharacter = Character(UnicodeScalar(scalarValue + 1)!)
                         }
+                    } else {
+                        break
                     }
                 }
-                notes_from_key.insert(Note(character: character, atTime: createAtTime), at: 0)
+                notes_from_key.insert(Note(character: nextCharacter, atTime: createAtTime), at: 0)
             }
             storage.notes[key] = notes_from_key
             storage.saveNotes()
             storage.updateBooksWithNotes()
+        })
+        .onDisappear(perform: {
+            hasComingBack = true
         })
         .frame(maxWidth: 700)
         .listStyle(PlainListStyle())
