@@ -11,6 +11,7 @@ import AVKit
 extension AudioView {
     func back() {
         backClicked = true
+        player?.pause()
         presentationMode.wrappedValue.dismiss()
     }
     
@@ -54,7 +55,7 @@ extension AudioView {
     
     func forward(time: TimeInterval) {
         player?.currentTime = (currentTime + time <= totalTime) ? currentTime + time : totalTime
-        if currentTime + time > totalTime {
+        if currentTime + time > totalTime && aviableAudio {
             pause()
             next()
         }
@@ -95,6 +96,7 @@ extension AudioView {
     }
     
     private func refresh() {
+        player?.stop()
         player = nil
         width = 0
         currentTime = 0.0
@@ -115,7 +117,7 @@ extension AudioView {
     
     func seekAudio(to time: TimeInterval) {
         player?.currentTime = time
-        if time >= totalTime {
+        if time >= totalTime && aviableAudio {
             pause()
             player?.currentTime = totalTime
             next()

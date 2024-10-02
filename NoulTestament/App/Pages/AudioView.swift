@@ -67,7 +67,7 @@ struct AudioView: View {
                 
                 // Book name and chapter
                 VStack {
-                    Text(aviableAudio ? book.name : "Acest capitol nu e disponibil")
+                    Text(aviableAudio ? book.name : "Acest capitol momentan nu e disponibil")
                         .font(.roboto, size: 40)
                         .fontWeight(.medium)
                         .minimumScaleFactor(0.75)
@@ -202,7 +202,9 @@ struct AudioView: View {
             }
             NotificationCenter.default.addObserver(forName: NSNotification.Name("audioFinished"),
                                                    object: nil, queue: .main) { _ in
-                next()
+                if !backClicked {
+                    next()
+                }
             }
         })
         .onDisappear(perform: {
